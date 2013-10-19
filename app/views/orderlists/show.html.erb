@@ -2,11 +2,21 @@
     <div class="span6 offset3">
         <div class="well">
             <p>
-              <%= @orderlist.description %>
+              <%= @orderlist.id %>
             </p>
+            <hr>
+            <p>
+              <%= @orderlist.created_at %>
+            </p>
+            <hr>
             <p>
               <%= @orderlist.user.name %>
             </p>
+            <hr>
+            <p>
+              <%= @orderlist.user.email %>
+            </p>
+            <hr>
             <% if current_user == @orderlist.user %>
                 <%= link_to 'Edit', edit_orderlist_path(@orderlist) %> |
             <% end %>
