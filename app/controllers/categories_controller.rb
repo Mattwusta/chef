@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  http_basic_authenticate_with name: "matt", password: "12345678", except: :show
   # GET /categories
   # GET /categories.json
   def index
