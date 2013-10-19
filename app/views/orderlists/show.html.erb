@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="span6 offset3">
+        <div class="well">
+            <p>
+              <%= @orderlist.description %>
+            </p>
+            <p>
+              <%= @orderlist.user.name %>
+            </p>
+            <% if current_user == @orderlist.user %>
+                <%= link_to 'Edit', edit_orderlist_path(@orderlist) %> |
+            <% end %>
+            <%= link_to 'Back', orderlists_path %>
+        </div>
+    </div>
+</div>

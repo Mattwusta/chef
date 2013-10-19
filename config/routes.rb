@@ -1,6 +1,15 @@
 Dine::Application.routes.draw do
 
 
+  resources :orderlists
+
+
+  resources :shoplists
+
+
+  resources :orders
+
+
   resources :categories
 
 

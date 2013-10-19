@@ -17,5 +17,7 @@ class User < ActiveRecord::Base
    # attr_accessible :title, :body
 
   has_many :pins, :dependent => :destroy
+  has_many :orderlists, :dependent => :destroy
+
 end
 

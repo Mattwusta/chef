@@ -1,0 +1,10 @@
+ <tr>
+ <% if current_user == orderlist.user %>
+ 		<td> <%= orderlist.id %></td>
+ 		<td> <%= orderlist.created_at %></td>
+ 		<td> <%= link_to orderlist.user.name, orderlist.user%></td>
+ 		<td> <%= link_to orderlist.user.email, orderlist.user.email%></td>
+        <td><%= link_to 'Show', orderlist %></td>
+        <td><%= link_to 'Destroy', orderlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
+  </tr>
