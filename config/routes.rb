@@ -23,6 +23,9 @@ Dine::Application.routes.draw do
   get 'know' => 'pages#know'
   get 'give' => 'pages#give' 
   get 'how' => 'pages#how' 
+  get 'dish1' => 'pages#dish1'
+  get 'dish2' => 'pages#dish2' 
+  get 'dish3' => 'pages#dish3' 
  
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get

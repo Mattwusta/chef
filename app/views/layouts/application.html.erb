@@ -6,7 +6,7 @@
   <% if content_for?(:head) %>
     <%= yield(:head) %>
   <% end %>
-<title> TheChefStars 主廚之星 - 尋找美食中的主廚之星 In Search Of TheChefStars </title>
+<title> Chef29 今晚大廚 - 在家享受大廚料理，吃的健康又便宜。 </title>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -85,13 +85,9 @@ var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
     <font style="padding-left:10px;"><a href="http://www.youtube.com/channel/UC2BxokPzfMkmRBUJM0ciakA" title="Flickr 上 mattwusta 的 u2"><img src="http://farm8.staticflickr.com/7323/9910506464_2cc6f0c41c_s.jpg" width="55" height="50" alt="u2"></a>
 
     <font style="padding-left:10px;"><a href="http://www.thechefstars.com/instagram" title="Flickr 上 mattwusta 的 insta"><img src="http://farm3.staticflickr.com/2875/9910428935_fc0718c232_s.jpg" width="52" height="50" alt="insta"></a>
-
-
 </font>
-
-   </P>
-   <hr>
-
+</P>
+<br><br>
 
    <font size="3"> <%= link_to "Contact Us 聯絡我們",contact_path, {:style => 'color: #8c8c8c'}%></font>
     <br><br>
@@ -99,13 +95,11 @@ var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
      <br><br>
    <font size="3"><%= link_to "Privacy 隱私權政策",privacy_path, {:style => 'color: #8c8c8c'}%></font>
     </center>
-</div>
+  </div>
 </div>
 
-<hr>
 <center><font color="gray">2013 Chef29 今晚大廚 All Rights Reserved</font>
-<hr>
-          
+         
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

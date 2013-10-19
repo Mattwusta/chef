@@ -5,7 +5,8 @@ class NotificationsMailer < ActionMailer::Base
   def new_message(message)
     @message = message
     mail(:subject => "[Chef29 Contact] #{message.subject}" )
-    mail(:body => "[聯絡主題] #{message.subject} [內容] #{message.body}" )
+    mail(:body => "[聯絡主題] #{message.subject} [聯絡人] #{message.name} [聯絡EMAIL] #{message.email} [內容] #{message.body}" )
+  	
   end
 
 end

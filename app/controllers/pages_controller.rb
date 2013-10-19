@@ -20,6 +20,15 @@ end
 def menu
 end
 
+def dish1
+end
+
+def dish2
+end
+
+def dish3
+end
+
 def how
 end
 

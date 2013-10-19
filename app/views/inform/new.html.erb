@@ -1,5 +1,5 @@
 <center><div class="page-header">
-    <font color="gray" size ="6" face = "Baskerville Old Face">。
+    <font color="gray" size ="6" face = "Baskerville Old Face">
  </font> </font>
 <% if user_signed_in? %>
 
@@ -15,9 +15,14 @@
 <center><%=image_tag("how1.png", alt: "charity", :size => '1200x250')%></center>
 <hr>
 
+<div class=" hero-unit">
 <%= form_for @order, :url => inform_path do |form| %>
   <fieldset class="fields">
     <div class="field">
+      <font size="6"><b>餐點下單<b></font>
+      <br>
+      <br>
+
       <%= form.label :name %>
       <%= form.text_field :name, :placeholder => "曾愛慈：建議與付款帳號相同..." %>
     </div>
@@ -61,5 +66,7 @@
   
   </div>
 
+
   </fieldset>
 <% end %>
+</div>
