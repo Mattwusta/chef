@@ -7,7 +7,7 @@
 <% if user_signed_in? %>
 
 <% else %>
-          <font color = "white" style="padding-left:60px;" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+  <font color = "white" style="padding-left:60px;" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
    btn-primary" %></font>
 
 <% end %>
@@ -88,15 +88,10 @@
 </p>
 <p> 
 <div class="fb-like" data-href="http://www.chef29.com" data-width="450" data-show-faces="true" data-send="true"></div>
-</p>
-</div>
-<% end %>
-</body>
-
-<% if user_signed_in? %>
-  <% else %>
-    <hr>
+      </p>
+    </div>
   <% end %>
+</body>
 
  
 <script>
