@@ -13,7 +13,7 @@
   <ul class="nav">
    <li><%= link_to "了解更多", know_path %></li>  
 
-   <li><div class="dropdown" style="padding:10px; display: block; position: static;"><a class="dropdown-toggle" data-toggle="dropdown" href="#">更多</a>
+   <li><div class="dropdown" style="padding:10px; display: block; position: static;"><a class="dropdown-toggle" data-toggle="dropdown" href="#">菜單</a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
    <li><%= link_to "Menu 菜單上", menu_path %></li>
@@ -21,7 +21,13 @@
    <li><%= link_to "Pintrest ", '' %></li>
    <li><%= link_to "Instagram", '' %></li>
    </Ul>
-   <li><%= link_to "如何購買", how_path %></li>  
+   <li><div class="dropdown" style="padding:10px; display: block; position: static;"><a class="dropdown-toggle" data-toggle="dropdown" href="#">如何購買</a>
+
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+   <li><%= link_to "購買流程", menu_path %></li>
+   <li><%= link_to "取消訂購", '' %></li>
+   </Ul>
+ 
    <li><%= link_to "買1捐1", give_path %></li>  
  </ul>
   
