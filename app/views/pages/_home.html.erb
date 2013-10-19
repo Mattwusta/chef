@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<center><div class="page-header">
+ <font color="gray" size ="6" face = "Baskerville Old Face">感謝各位大善人Chef29已捐出<font color="#5CA5FF" size ="8" face = "Baskerville Old Face"> 3897 </font>份餐點</font>
+
+<% if user_signed_in? %>
+
+<% else %>
+          <font color = "white" style="padding-left:60px;" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %></font>
+
+<% end %>
+        </font>
+      </i>
+    </h1>
+  </center>
+
+<% unless user_signed_in? %>
+<head>
+ <script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+
+<% content_for :head do %>
+    <meta property="fb:app_id"          content="479820998782220" /> 
+    <meta property="og:type"            content="website" /> 
+    <meta property="og:url"             content="http://www.chef29.com" /> 
+    <meta property="og:title"           content="Chef29 今晚大廚" /><meta property="og:description"     content="Chef29今晚大廚 －大廚為您準備食譜與食材，送到府上29分鐘讓您變大廚。" /> 
+    <meta property="og:image"           content="http://farm4.staticflickr.com/3761/9730599510_a74ae4585d_o.png" /> 
+<% end %>
+
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
+    <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
+
+</head>
+
+<body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=479820998782220";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="center hero-unit">
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+ 
+  </ol>
+  <!-- Carousel items -->
+
+  <div class="carousel-inner">
+  <div class="active item"><a href="http://www.chef29.com/users/sign_up" title="Flickr 上 mattwusta 的 joinnow"><img src="http://farm8.staticflickr.com/7436/9741046544_2d82419fd6_o.png" width="1400" height="480" alt="joinnow"></a></div>
+
+  <div class="item"><a href="http://www.chef29.com/give" title="Flickr 上 mattwusta 的 1st"><img src="http://farm8.staticflickr.com/7396/9738744161_df5121ba63_o.png" width="1400" height="481" alt="1st"></a></div>
+
+    <div class="item"><a href="" title="Flickr 上 mattwusta 的 sushi2"><img src="http://farm8.staticflickr.com/7423/9727420021_52b2a70d4b_o.png" width="1400" height="300" alt="sushi2"></a></div>
+
+    <div class="item"><a href="http://chef29.herokuapp.com/users/chef29" title="Flickr 上 mattwusta 的 salad"><img src="http://farm6.staticflickr.com/5478/9727372343_72cd07096e_o.png" width="1400" height="300" alt="salad"></a></a></div>
+
+    <div class="item"><a href="" title="Flickr 上 mattwusta 的 ingreidients"><img src="http://farm4.staticflickr.com/3683/9727371919_8da7176539_o.png" width="1400" height="300" alt="ingreidients"></a></div>
+
+    <div class="item"><a href="" title="Flickr 上 mattwusta 的 fresh3"><img src="http://farm6.staticflickr.com/5479/9727449563_cebf51ffec_o.png" width="1400" height="301" alt="fresh3"></a></div>
+
+    <div class="item"><a href="" title="Flickr 上 mattwusta 的 3star"><img src="http://farm4.staticflickr.com/3767/9730598962_1648f0cf2e_o.png" width="1400" height="299" alt="3star"></a></div>
+
+    <div class="item"><a href="" title="Flickr 上 mattwusta 的 delivery"><img src="http://farm6.staticflickr.com/5478/9727371669_b2a116a160_o.png" width="1400" height="300" alt="delivery"></a></div>
+
+    <div class="item"><a href="" title="Flickr 上 mattwusta 的 cooking"><img src="http://farm8.staticflickr.com/7359/9727371749_a7cdb147fc_o.png" width="1400" height="300" alt="cooking"></a></div>
+
+     <div class="item"><a href="http://www.chef29.com/know" title="Flickr 上 mattwusta 的 Bonappetite"><img src="http://farm4.staticflickr.com/3761/9730599510_a74ae4585d_o.png" width="1400" height="300" alt="Bonappetite"></a></div>
+  </div>
+  <!-- Carousel nav -->
+ 
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+</div>.
+
+<p> 
+<font color = "white"> <%= link_to '註冊', new_user_registration_path, class: "btn btn-large btn-primary" %></font>
+</p>
+<p> 
+<div class="fb-like" data-href="http://www.chef29.com" data-width="450" data-show-faces="true" data-send="true"></div>
+</p>
+</div>
+<% end %>
+</body>
+
+<% if user_signed_in? %>
+ 
+ <% else %>
+ <form style="#ccc;padding:3px;text-align:center;" action="https://tinyletter.com/Chef29" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Chef29', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><label for="tlemail"> <font  size="5" face = "Baskerville Old Face"></font></label><input type="text" style="width:400px" name="email" id="tlemail" placeholder="訂閱: Chef29 今晚大廚 ：每週將寄不同大廚的新食譜給您！" /></p><input type="hidden" value="1" name="embed"/><a href="https://tinyletter.com" target="_blank"></a></p></form>
+ <% end %>
+
+ 
+<% if user_signed_in? %>
+  <% else %>
+    <hr>
+  <% end %>
+
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44036574-1', 'chef29.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">stLight.options({publisher: "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+<script>
+var options={ "publisher": "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "pinterest", "email", "sharethis"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+</html>

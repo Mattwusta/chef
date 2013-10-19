@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span1" >
+      <br><br><br><br><br><br><br><br><br>
+
+      <font size = "5"><center><b><a href="" title=""></a></center></font>
+
+      <font size = "5"><center><b><a href="" title="Flickr 上 mattwusta 的 youtube"><img src="http://farm4.staticflickr.com/3741/9909715796_64d8a62d69_o.png" width="45" height="80" alt="youtube"></a></center></font>
+      <br>
+
+     <font size = "5"><center><b><a href="" title="Flickr 上 mattwusta 的 instagram"><img src="http://farm8.staticflickr.com/7417/9909669085_8a4db88711_o.png" width="120" height="120" alt="instagram"></a></center></font>
+     <br>
+
+     <font size = "5"><center><b><a href="" title="Flickr 上 mattwusta 的 Instagramvid"><img src="http://farm8.staticflickr.com/7416/9909716016_786327a506_q.jpg" width="40" height="90" alt="Instagramvid"></a></font>
+     <br><br>
+
+     <font size = "5"><center><b><a href="" title="Flickr 上 mattwusta 的 vine"><img src="http://farm8.staticflickr.com/7329/9909745744_19dee959dd_q.jpg" width="45" height="150" alt="vine"></a></font>
+
+    
+    </div>
+
+    <div class="span10">
+      <div class=" hero-unit">
+   <%= simple_form_for(@pin, html: { class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+  <%= f.full_error :image_file_size, class: "alert alert-error" %>
+  <%= f.full_error :image_content_type, class: "alert alert-error" %>
+  <%= f.input :image, label: "上傳圖片" %>
+  <%= f.input :image_remote_url, label: "或輸入URL連結", as: :text, input_html: { :class => "span6", rows: "1" } %>
+
+  <%= f.input :yt_video_id, label: "輸入Youtube ID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "youtu.be/Iz_kTGXd90w=>(Iz_kTGXd90w)就是Youtube ID"} %>
+
+<%= f.input :instapid, label: "輸入Instagram PID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "//instagram.com/p/eMSpPKP9cF/embed/=>(eMSpPKP9cF/embed/) － 就是相片PID"} %>
+  <%= f.input :instaid, label: "輸入Instagram影片ID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "//instagram.com/p/b-oOubP9cZ/embed/=>(b-oOubP9cZ/embed/)－ 就是Instagram影片ID"} %>
+  
+
+  <%= f.input :vineid, label: "輸入VINEID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "vine.co/v/h1HwMFwhWul/embed => (h1HwMFwhWul/embed/simple)就是VINEID"} %>
+
+  <%= f.input :name, label: "主題", as: :text, input_html: { :class => "span10", rows: "1" }%>
+  
+  <%= f.input :description, label: "內容", as: :text, input_html: { :class => "span10", rows: "10" } %>
+
+  <P style = "padding-left:20px;"><%= f.label :category, label: "分類      .    " %> 
+    <%= f.collection_select :category_id, Category.all, :id, :name %>  </p>
+ 
+ 
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>
+    </div>
+  </div>
+</div>
+</div>
