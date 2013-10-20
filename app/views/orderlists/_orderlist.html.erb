@@ -1,10 +1,13 @@
  <tr>
  <% if current_user == orderlist.user %>
- 		<td> <%= orderlist.id %></td>
+ 		<td><%= orderlist.id %></td>
  		<td> <%= orderlist.created_at %></td>
  		<td> <%= link_to orderlist.user.name, orderlist.user%></td>
- 		<td> <%= link_to orderlist.user.email, orderlist.user.email%></td>
+ 		<td> <%= link_to orderlist.user.email, orderlist.user%></td>
+ 		<td><%= (orderlist.dish1 + orderlist.dish2 + orderlist.dish3) %>份</td>
+ 	    <td>＄<%= ((orderlist.dish1 + orderlist.dish2 + orderlist.dish3) *299) %></td>
         <td><%= link_to 'Show', orderlist %></td>
+        <%= link_to '刪除', orderlist, method: :delete, data: { confirm: '你確定嗎?' } %>
         
     <% end %>
   </tr>

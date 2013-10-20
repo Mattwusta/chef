@@ -1,7 +1,7 @@
 
 <center><div class="page-header">
     <font color="gray" size ="6" face = "Baskerville Old Face">
- </font> </font>
+ 購買餐點 － 請填入以下訂購單後送出</font>
 <% if user_signed_in? %>
 
 <% else %>
@@ -18,8 +18,8 @@
 
 
 <div class=" hero-unit">
- <font size = "5" color= "gray">購買餐點 － 請填入以下訂單表格後送出</font>
- <br><br><br>
+ <font size = "5" color= "gray">餐點訂購單</font>
+<br><br>
 
 <%= form_for @ordernew, :url => alert_path do |form| %>
   <fieldset class="fields">

@@ -41,7 +41,7 @@ class OrderlistsController < ApplicationController
   # POST /orderlists
   # POST /orderlists.json
   def create
-    @orderlist = current_user.orderlists.new(params[:pin])
+    @orderlist = current_user.orderlists.new(params[:orderlist])
 
     respond_to do |format|
       if @orderlist.save
@@ -53,6 +53,7 @@ class OrderlistsController < ApplicationController
       end
     end
   end
+
 
   # PUT /orderlists/1
   # PUT /orderlists/1.json

@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
                             size: { less_than: 5.megabytes }
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :image, :image_file_name, :email, :password, :password_confirmation, :remember_me, :name, :address, :phone, :intro
+  attr_accessible :image, :image_file_name, :email, :password, :password_confirmation, :remember_me, :name, :address, :phone, :intro, :dish1, :dish2, :dish3
    # attr_accessible :title, :body
 
   has_many :pins, :dependent => :destroy

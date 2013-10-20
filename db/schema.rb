@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131019140328) do
+ActiveRecord::Schema.define(:version => 20131020080249) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(:version => 20131019140328) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.integer  "user_id"
+    t.integer  "dish1"
+    t.integer  "dish2"
+    t.integer  "dish3"
+    t.integer  "dishsum"
   end
 
   add_index "orderlists", ["user_id"], :name => "index_orderlists_on_user_id"
