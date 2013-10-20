@@ -1,4 +1,5 @@
 class PinsController < ApplicationController
+  before_filter :authenticate_user!, except: [:index, :show]
   http_basic_authenticate_with name: "matt", password: "12345678", except: [:index, :show]
   before_filter :prepare_categories
   

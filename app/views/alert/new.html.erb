@@ -1,3 +1,4 @@
+
 <center><div class="page-header">
     <font color="gray" size ="6" face = "Baskerville Old Face">
  </font> </font>
@@ -5,7 +6,7 @@
 
 <% else %>
     
-          <font color = "white" style="padding-left:60px;" > <%= link_to 'Get Cooking', new_user_registration_path, class: "btn btn-large
+<%= link_to '註冊', new_user_registration_path, class: "btn btn-large
    btn-primary" %></font>
 
 <% end %>
@@ -13,16 +14,16 @@
   </center>
 
 <center><%=image_tag("how1.png", alt: "charity", :size => '1200x250')%></center>
-<hr>
+
+
 
 <div class=" hero-unit">
-<%= form_for @order, :url => inform_path do |form| %>
+ <font size = "5" color= "gray">購買餐點 － 請填入以下訂單表格後送出</font>
+ <br><br><br>
+
+<%= form_for @ordernew, :url => alert_path do |form| %>
   <fieldset class="fields">
     <div class="field">
-      <font size="6"><b>餐點下單<b></font>
-      <br>
-      <br>
-
       <%= form.label :name %>
       <%= form.text_field :name, :placeholder => "曾愛慈：建議與付款帳號相同..." %>
     </div>
@@ -49,7 +50,7 @@
 
      <div class="field">
       <%= form.label :time %>
-      <%= form.text_field :time, :placeholder => "收貨時間： 下午 2:00 ～ 6:00" %>
+      <%= form.text_field :time, :placeholder => "收貨時間： 請給2個小時的時間。" %>
     </div>
     
     <div class="field">
@@ -65,7 +66,6 @@
     <%= form.submit "送出訂單", class: "btn btn-primary" %>
   
   </div>
-
 
   </fieldset>
 <% end %>

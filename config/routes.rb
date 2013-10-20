@@ -1,28 +1,18 @@
 Dine::Application.routes.draw do
 
-
   resources :orderlists
-
-
   resources :shoplists
-
-
-  resources :orders
-
-
   resources :categories
-
 
   get "home/index"
 
   resources :pins
   resources :pin 
-
   devise_for :users
   match 'users/:id' => 'users#show', as: :user
 
   root :to => 'pins#index'
-  get 'instagram' => 'pages#instagram'
+  get 'admin' => 'pages#admin'
   get 'list' => 'pages#list'
   get 'shop' => 'pages#shop'
   get 'service' => 'pages#service'
@@ -40,8 +30,8 @@ Dine::Application.routes.draw do
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
 
-  match 'inform' => 'inform#new', :as => 'inform', :via => :get
-  match 'inform' => 'inform#create', :as => 'inform', :via => :post
+  match 'alert' => 'alert#new', :as => 'alert',  :via => :get
+  match 'alert'  => 'alert#create', :as => 'alert', :via => :post
 
   as :user do
   match '/user/confirmation' => 'confirmations#update', :via => :put, :as => :update_user_confirmation

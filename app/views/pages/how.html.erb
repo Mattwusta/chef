@@ -17,7 +17,7 @@
 
 <center><div class="page-header">
 
-     <font color="gray" size ="6" face = "Baskerville Old Face">發現，學習，體驗，享受，吸收，分享它...</font>
+     <font color="gray" size ="6" face = "Baskerville Old Face">發現，學習，體驗，享受，吸收，分享, 回饋...</font>
         <% if user_signed_in? %>
 
 <% else %>
@@ -28,7 +28,7 @@
 <% end %>
 <hr>
 <% if user_signed_in? %>
-  <center><i><font color = "white" > <%= link_to '買 1 捐 1',inform_path, class: "btn btn-large btn-success" %></font></i></center>
+  <center><i><font color = "white" > <%= link_to '買 1 捐 1',alert_path, class: "btn btn-large btn-success" %></font></i></center>
 <% else %>
       
 <% end %>
