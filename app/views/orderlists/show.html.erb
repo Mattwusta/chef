@@ -1,6 +1,14 @@
+<center><div class="page-header">
+ <font color="gray" size ="6" face = "Baskerville Old Face">感謝您購買Chef29餐點，也謝謝您幫助許多沒飯吃的朋友</font>
+ </center>
+    <hr>
+
 <div class="row">
     <div class="span6 offset3">
         <div class="well">
+          <font size = "3" color= "red">餐點出貨日期為 2012/11/12下午1:30分，匯款截止時間為 2012/11/07 下午3:30分。</font>
+        <hr>
+
             <p>訂單編號：
               <%= @orderlist.id %>
             </p>
@@ -34,12 +42,12 @@
             </p>
             <hr>
 
-            <p>您總共購買了：
-            <%= (@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) %>份
+            <p>總共購買了：
+            <%= (@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) %>份餐點
             </p>
             <hr>
 
-            <p>餐點費用： ＄
+            <p> ＄
             <%= ((@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) *299) %>新台幣
             <hr>
 
