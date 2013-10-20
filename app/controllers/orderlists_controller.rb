@@ -4,6 +4,7 @@ class OrderlistsController < ApplicationController
   # GET /orderlists.json
   def index
     @orderlists = Orderlist.all
+    @orderlists = Orderlist.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb
