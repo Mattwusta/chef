@@ -43,6 +43,13 @@
             <% else %>
             <% end %>
             
+            <% if @orderlist.re.present? %>
+            <p>其他收餐人：
+              <%= @orderlist.re %>
+            </p>
+            <hr>
+            <% else %>
+            <% end %>
 
 <% if @orderlist.phone.present? %>
             <p>聯絡電話：
