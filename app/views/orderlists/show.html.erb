@@ -21,29 +21,76 @@
               <%= @orderlist.created_at %>
             </p>
             <hr>
-            <p>訂購聯絡人：
+
+            <p>訂購人：
               <%= @orderlist.user.name %>
             </p>
             <hr>
+
+            <% if @orderlist.user.phone.present? %>
+            <p>收餐人電話：
+              <%= @orderlist.user.phone %>
+            </p>
+            <hr>
+            <% else %>
+            <% end %>
+
+            <% if @orderlist.user.address.present? %>
+            <p>收餐地址：
+              <%= @orderlist.user.address %>
+            </p>
+            <hr>
+            <% else %>
+            <% end %>
+            
+            <% if @orderlist.reciever.present? %>
+            <p>其他收餐人：
+              <%= @orderlist.reciever %>
+            </p>
+            <hr>
+            <% else %>
+            <% end %>
+
+<% if @orderlist.phone.present? %>
+            <p>聯絡電話：
+              <%= @orderlist.phone %>
+            </p>
+            <hr>
+            <% else %>
+            <% end %>
+
             <p>聯絡人EMAIL：
               <%= @orderlist.user.email %>
+            </p>
+            <hr>
+            
+            <% if @orderlist.phone.present? %>
+            <p>送餐地址：
+              <%= @orderlist.address %>
+            </p>
+            <hr>
+            <% else %>
+            <% end %>
+
+            <p>送餐時間：
+              <%= @orderlist.time %>
             </p>
             <hr>
 
             <p>1號餐：
               <%= @orderlist.dish1 %>份
             </p>
-            <hr>
+           
  
             <p>2號餐：
               <%= @orderlist.dish2 %>份
             </p>
-            <hr>
+            
 
             <p>3號餐：
               <%= @orderlist.dish3 %>份
             </p>
-            <hr>
+            
 
             <p>總共購買了：
             <%= (@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) %>份餐點

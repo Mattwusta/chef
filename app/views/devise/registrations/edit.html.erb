@@ -7,8 +7,6 @@
 <hr>
     <br>
 
-
-
 <div class="hero-unit">
 
 <div class="container-fluid">
@@ -21,8 +19,11 @@
    <font color="gray" size="5"><b> <%= @user.name %></b></font><br>
  <% if @user.intro.present? %>
    <font color="gray" size="3"> <%= @user.intro %></font><br>
+   <% else %>
+   <font color="#5CA5FF" size="4" color><i> “您可以在右上角選單個人 > 編輯資料裡填入自我介紹，地址，電話等資訊。”</i></font>
+   <% end %>
    
-   <% if @user.phone.present? %>
+   <% if @user.address.present? %>
    <font color="gray" size="2"><b>地址:</b> <%= @user.address %></font><br>
    <% else %>
    <% end %>
@@ -31,10 +32,10 @@
    <font color="gray" size="2"><b>電話: </b> <%= @user.phone %></font>
    <% else %>
    <% end %>
-   <% else %>
+
    <br>
-   <font color="#5CA5FF" size="4" color><i> “您可以在右上角選單個人 > 編輯資料裡填入自我/店家介紹，地址，電話等資訊。”</i></font>
-<% end %>
+   
+
     </div>
   </div>
 </div>
@@ -52,9 +53,9 @@
     <%= f.input :image, label: "更換大頭照" %>
     <%= f.input :name, :required => true, :autofocus => true %>
     <%= f.input :email, :required => true, :autofocus => true %>
-    <%= f.input :phone, label: "電話" %>
-    <%= f.input :address, label: "地址" %>
-    <%= f.input :intro, label: "自我介紹", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "我是太空人，剛到地球，要去台東玩，朋友要帶我情啾看。"} %>
+    <%= f.input :phone, label: "聯絡電話" %>
+    <%= f.input :address, label: "送餐地址" %>
+    <%= f.input :intro, label: "自我介紹", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "我是火星人，剛移民來地球，想去台東玩，因為朋友要請我情啾看！"} %>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
