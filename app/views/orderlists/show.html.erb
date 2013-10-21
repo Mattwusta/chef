@@ -42,14 +42,6 @@
             <hr>
             <% else %>
             <% end %>
-            
-            <% if @orderlist.re.present? %>
-            <p>其他收餐人：
-              <%= @orderlist.re %>
-            </p>
-            <hr>
-            <% else %>
-            <% end %>
 
 <% if @orderlist.phone.present? %>
             <p>聯絡電話：
@@ -97,8 +89,8 @@
             </p>
             <hr>
 
-            <p> ＄
-            <%= ((@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) *299) %>新台幣
+            <p> 新台幣＄
+            <%= ((@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) *299) %>
             <hr>
 
 
