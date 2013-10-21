@@ -11,6 +11,8 @@ Dine::Application.routes.draw do
   
   devise_for :users
   match 'users/:id' => 'users#show', as: :user
+  match 'users/:id/userorders' => 'users#userorders', as: :userorders
+  
  
  
   root :to => 'pins#index'

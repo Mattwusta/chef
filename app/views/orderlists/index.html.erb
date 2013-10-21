@@ -1,27 +1,12 @@
 
-<% if user_signed_in? %>
-    <h3>新訂單</h3>
-    <br><br>
+    <h3>所有訂單</h3>
+    <hr>
+     
 
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>訂單 #</th>
-                <th>下單時間</th>
-                <th>訂購人</th>
-                <th>訂購人EMAIL</th>
-                
-                <th>查看訂購單</th>
-                <th>刪除</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <%= render @orderlists %>
-        </tbody>
-    </table>
-<% else %>
-      
-<% end %>
-   
+<%= render 'pages/admin' %>
+    <br>
+    <div id="orderlists">
+        <%= render @orderlists %>
+    </div>
+       
 
