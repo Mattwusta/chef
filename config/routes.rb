@@ -8,10 +8,13 @@ Dine::Application.routes.draw do
 
   resources :pins
   resources :pin 
+  
   devise_for :users
   match 'users/:id' => 'users#show', as: :user
-
+ 
+ 
   root :to => 'pins#index'
+  get 'manage' => 'orderlists#manage'
   get 'admin' => 'pages#admin'
   get 'list' => 'pages#list'
   get 'shop' => 'pages#shop'

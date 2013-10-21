@@ -1,5 +1,6 @@
  <tr>
- <% if current_user == orderlist.user %>
+
+   <% if current_user == orderlist.user %>
  		<td><%= orderlist.id %></td>
  		<td> <%= orderlist.created_at %></td>
  		<td> <%= link_to orderlist.user.name, orderlist.user%></td>
@@ -7,6 +8,8 @@
  		
         <td><%= link_to 'Show', orderlist %></td>
          <td><%= link_to '刪除', orderlist, method: :delete, data: { confirm: '你確定嗎?' } %></td>
+
+   <% else %>
+   <% end %>
         
-    <% end %>
   </tr>

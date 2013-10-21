@@ -37,10 +37,11 @@
   <ul class="nav pull-right">
     <% if user_signed_in? %>
       <li><%= link_to "購買＋", new_orderlist_path %></li>
-      <li><div class="dropdown" style="padding:10px; display: block; position: static;"><a class="dropdown-toggle" data-toggle="dropdown" href="#">個人</a>
+      <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">個人</a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
    <li><%= link_to "聯絡", contact_path %></li>
+   <li><%= link_to "查看訂單", orderlists_path %></li>
    <li><%= link_to "編輯資料", edit_user_registration_path %></li>
    <li><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
   </ul>

@@ -1,14 +1,23 @@
 class OrderlistsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
+  http_basic_authenticate_with name: "matt", password: "12345678", except: [ :show, :new, :edit, :create, :update, :destroy ]
   # GET /orderlists
   # GET /orderlists.json
   def index
-    @orderlists = Orderlist.all
-    @orderlists = Orderlist.order("created_at desc")
+    @orderlists = Orderlist.order("created_at desc").page(params[:page]).per_page(20)
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @orderlists }
+    end
+  end
+
+  def manage
+    @allorders = Orderlist.order("created_at desc").page(params[:page]).per_page(20)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @allorders }
     end
   end
 

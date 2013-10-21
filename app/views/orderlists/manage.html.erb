@@ -1,0 +1,24 @@
+<h1>Manage - 後台管理</h1><br><br>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>訂單 #</th>
+                <th>下單時間</th>
+                <th>訂購人</th>
+                <th>訂購人EMAIL</th>
+                <th>查看訂購單</th>
+                <th>刪除</th>
+            </tr>
+        </thead>
+
+<%= render 'pages/admin' %>
+
+          <tbody>
+            <%= render @allorders %>
+        </tbody>
+    </table>
+
+    <%= will_paginate @allorders %>
+
+    <br />

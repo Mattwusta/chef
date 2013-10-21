@@ -5,7 +5,6 @@ class PinsController < ApplicationController
   
   require  'will_paginate/array'
 
-
   # GET /pins
   # GET /pins.json
     def index

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<% content_for :head do %>
+    <meta property="fb:app_id"          content="41421303274749826" /> 
+    <meta property="og:type"            content="website" /> 
+     <meta property="og:url"             content='<% "http://wwww.thechefstars.com/" + user_path(@user) %>' /> 
+    <meta property="og:title" content='<%= @user.name %>' />
+    <meta property="og:description" content='<%= @user.intro %>' />
+    <meta property="og:image" content='<%= @user.image %>' />
+<% end %>
+
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+</head>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+     <%= image_tag @user.image %>
+    </div>
+    
+    
+   <div class="span10">
+   <font color="gray"  size="5"><b><%= @user.name %></b></font><br>
+   <br>
+   <% if @user.intro.present? %>
+   <font color="gray" size="3"><i> <%= simple_format@user.intro %></i></font><br>
+  
+   <% if @user.phone.present? %>
+   <font color="gray" size="2"><b>地址:</b> <%= @user.address %></font><br>
+
+   <% else %>
+   <% end %>
+   
+   <% if @user.phone.present? %>
+   <font color="gray" size="2"><b>電話: </b> <%= @user.phone %></font><br>
+   <% else %>
+   <% end %>
+   <% else %>
+   <br><br>
+   <font color="#5CA5FF" size="4" color><i> “您可以在右上角選單個人 > 編輯資料裡填入自我/店家介紹，地址，電話等資訊。”</i></font>
+<% end %>
+
+    </div>
+  </div>
+</div>
+
+
+<hr>
+<br>
+
+<div id="pins">
+  <%= render @orderlists %>
+</div>
+
+<%= will_paginate @orderlists %>
+
+
+<script type="text/javascript">stLight.options({publisher: "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+<script>
+var options={ "publisher": "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "pinterest", "email", "googleplus", "blogger", "wordpress", "baidu"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+</html>
