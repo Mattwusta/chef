@@ -92,12 +92,30 @@
             <p> 新台幣＄
             <%= ((@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) *299) %>
             <hr>
+            <font size = "3" color= "red">以下完成匯款後再回來填入（查看訂單 > 訂單細節 > 編輯)</font>
+<br><br>
+            <p>匯款／轉帳（帳號末5碼）：
+              <%= @orderlist.account %>
+            </p>
+            
+
+            <p>匯款／轉帳金額：$
+              <%= @orderlist.wireamount %>
+            </p>
+            <hr>
+            <p>
+            付款帳號(匯款/轉帳）: 國泰世華銀行
+            </p>
+            <br>
+            <br>
+
+        
 
 
             <% if current_user == @orderlist.user %>
-                <%= link_to 'Edit', edit_orderlist_path(@orderlist) %> |
+                <%= link_to '編輯', edit_orderlist_path(@orderlist) %> |
             <% end %>
-            <%= link_to 'Back', orderlists_path %>
+            <%= link_to '上一頁', orderlists_path %>
         </div>
     </div>
 </div>

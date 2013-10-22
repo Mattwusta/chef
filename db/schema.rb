@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131021151632) do
+ActiveRecord::Schema.define(:version => 20131022055008) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(:version => 20131021151632) do
     t.string   "Name"
     t.string   "reciever"
     t.text     "re"
+    t.string   "account"
+    t.string   "wireamount"
   end
 
   add_index "orderlists", ["user_id"], :name => "index_orderlists_on_user_id"
