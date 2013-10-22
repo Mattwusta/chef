@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <% content_for :head do %>
+    <meta property="fb:app_id"          content="479820998782220" /> 
+    <meta property="og:type"            content="Chef29:post" /> 
+    <meta property="og:url"             content='<% "http://wwww.chef29.com/" + category_path(@category) %>' /> 
+    <meta property="og:description" content='<%= @category.description %>' />
+    <meta property="og:title" content='<%= @category.name %>' />
+    <meta property="og:image" content='<%= @category.image %>' />
+ 
+   
+
+  <% end %>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+</head>
+
+<body>
+
 <p id="notice"><%= notice %></p>
 
 
@@ -12,6 +34,8 @@
 
 <%= link_to '', edit_category_path(@category) %> 
 <%= link_to '', categories_path %>
+
+</body>
 
 <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
@@ -33,3 +57,4 @@
 var options={ "publisher": "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "pinterest", "googleplus", "email", "baidu"]}};
 var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
 </script>
+</html>
