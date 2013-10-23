@@ -17,21 +17,53 @@
 
 <center><div class="page-header">
   
-     <font color="gray" size ="6" face = "Baskerville Old Face">"A Food Startup With A Social Mission."
+     <font color="gray" size ="6" face = "Baskerville Old Face">Chef29是一結合美食與科技的新創良心事業
         </font>
           <% if user_signed_in? %>
 
 <% else %>
         </font>
           <font color = "white" style="padding-left:60px;" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
-   btn-primary" %></font>
-   
-            <% end %>
-        </font>
-     
-  </center>
+   btn-primary" %>
+      </font>
+    <% end %>
+  </font>   
+</center>
 
-<%=image_tag("know.png", alt: "charity", :size => '1200x490')%>
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+ 
+  </ol>
+  <!-- Carousel items -->
+
+  <div class="carousel-inner">
+  <div class="active item"><a href="http://www.chef29.com/users/sign_up" ><img src="http://farm8.staticflickr.com/7436/9741046544_2d82419fd6_o.png" width="1400" height="480" alt="joinnow"></a></div>
+
+  <div class="item"><a href="http://www.chef29.com/give" ><img src="http://farm8.staticflickr.com/7396/9738744161_df5121ba63_o.png" width="1400" height="481" alt="1st"></a></div>
+
+    <div class="item"><a href="http://www.chef29.com/categories/3" ><img src="http://farm8.staticflickr.com/7423/9727420021_52b2a70d4b_o.png" width="1400" height="300" alt="sushi2"></a></div>
+
+    <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm6.staticflickr.com/5478/9727372343_72cd07096e_o.png" width="1400" height="300" alt="salad"></a></a></div>
+
+    <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm4.staticflickr.com/3683/9727371919_8da7176539_o.png" width="1400" height="300" alt="ingreidients"></a></div>
+
+    <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm6.staticflickr.com/5479/9727449563_cebf51ffec_o.png" width="1400" height="301" alt="fresh3"></a></div>
+
+    <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm4.staticflickr.com/3767/9730598962_1648f0cf2e_o.png" width="1400" height="299" alt="3star"></a></div>
+
+    <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm6.staticflickr.com/5478/9727371669_b2a116a160_o.png" width="1400" height="300" alt="delivery"></a></div>
+
+    <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm8.staticflickr.com/7359/9727371749_a7cdb147fc_o.png" width="1400" height="300" alt="cooking"></a></div>
+
+     <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm4.staticflickr.com/3761/9730599510_a74ae4585d_o.png" width="1400" height="300" alt="Bonappetite"></a></div>
+  </div>
+  <!-- Carousel nav -->
+ 
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+</div>
+
 <hr>
 <center><font color = "gray" size ="6" face = "Baskerville Old Face"> 我們愛煮更愛吃 </font></center>
 <center><i><font color = "gray" size ="4" face = "Baskerville Old Face" >跟著頂級大廚學做各國料理。</font></i></center>

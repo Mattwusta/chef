@@ -9,9 +9,9 @@ class AlertController < ApplicationController
     
     if @ordernew .valid?
       Notice2sMailer.new_ordernew(@ordernew).deliver
-      redirect_to(root_path, :notice => "Ordernew was successfully sent.")
+      redirect_to(root_path, :notice => "取消訂單通知已送出")
     else
-      flash.now.alert = "Please fill all fields."
+      flash.now.alert = "請填入所有退款資料"
       render :new
     end
   end

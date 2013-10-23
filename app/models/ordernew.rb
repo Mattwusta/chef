@@ -4,7 +4,7 @@ class Ordernew
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :name, :email, :subject, :body, :number, :item, :address, :time, :special
+  attr_accessor :name, :email, :subject, :body, :number, :item, :account, :bank, :orderid, :address, :time, :special
 
   validates :name, :email, :presence => true
   validates :email, :format => { :with => %r{.+@.+\..+} }, :allow_blank => true
