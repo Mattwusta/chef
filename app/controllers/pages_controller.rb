@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	http_basic_authenticate_with name: "matt", password: "12345678", except: [:_home, :account, :dish1, :dish2, :dish3, :give, :how, :know, :list, :menu, :privacy, :search, :service, :shop, :why, :cancel]
+	http_basic_authenticate_with name: "manage", password: "steviematt", except: [:_home, :account, :dish1, :dish2, :dish3, :give, :how, :know, :list, :menu, :privacy, :search, :service, :shop, :why, :cancel]
 
 def home
 end
