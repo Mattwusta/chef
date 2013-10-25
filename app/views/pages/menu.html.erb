@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-
-
 <center><div class="page-header">
- <font color="gray" size ="6" face = "Baskerville Old Face">以下料理訂購截止時間為2013/11/12 星期五下午1:30</font>
+ <font color="gray" size ="6" face = "Baskerville Old Face">以下料理訂購截止時間為2013/11/12 星期一 下午1:30分</font>
 
 <% if user_signed_in? %>
 
@@ -33,14 +31,17 @@
 <head>
 
 <body>
-<font size = "5" color= "gray">本週最新菜單</font>
+<img src="http://farm4.staticflickr.com/3758/10470381556_19396de6a0_o.png" width="1347" height="447" alt="schedule"></a>
+<hr>
+
+<font size = "5" color= "gray">最新菜單</font>
 <br>
 <br>
 <br>
 
-<font size = "3" color= "red">。以下菜單出貨時間為 2013/11/17 星期三 </font>
+<font size = "3" color= "red">。以下菜單出貨時間為 2013/11/17 星期一下午 1:30分 </font>
 <br>
-<font size = "3" color= "red">。菜單付款截止時間 2013/11/12 星期五 下午3:30，若未收到款項將視為放棄。 </font>
+<font size = "3" color= "red">。菜單付款截止時間 2013/11/12 星期一下午3:30分，若未收到款項將視為放棄訂購。 </font>
 
 <br>
 <br>
@@ -63,7 +64,7 @@
 <br>
 <br>
 <center><p> 
-<font color = "white"> <%= link_to '購買餐點', new_orderlist_path, class: "btn btn-large btn-success" %></font>
+<font color = "white"> <%= link_to '訂購餐點', new_orderlist_path, class: "btn btn-large btn-success" %></font>
 </center></p>
 
 </body>

@@ -2,7 +2,7 @@
 <html>
 
 <center><div class="page-header">
- <font color="gray" size ="6" face = "Baskerville Old Face">Why Chef29 今晚大廚？</font>
+  <font color="#5CA5FF" size ="6" face = "Baskerville Old Face">透過 Chef29 今晚大廚訂購餐點除了可以享受美味餐點外還有許多好處!</font>
 
 <% if user_signed_in? %>
 
@@ -28,19 +28,30 @@
 </head>
 
 <body>
- <font color="#5CA5FF" size ="5" face = "Baskerville Old Face"><i>透過 Chef29 今晚大廚訂購餐點除了可以享受美味餐點外還有許多好處!</i></font>
-<br>
-<br>
 
 <img src="http://farm8.staticflickr.com/7359/10452876245_4cf8c39f61_o.png" width="1352" height="2178" alt="Why1"></a>
+<center><p> <br>
+<font color = "white"> <%= link_to '菜單上', menu_path, class: "btn btn-large btn-success" %></font>
+</center></p>
 
-<br><br>
-<hr>
+
 
 <img src="http://farm6.staticflickr.com/5472/10453170743_f557b48715_o.png" width="1360" height="1584" alt="blank2"></a>
-<hr>
+<br><br>
+<% if user_signed_in? %>
+<br>
+<br>
+<% else %>
+  <center><font color = "white" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %></font></center>
 
+<% end %>
+<br>
 <img src="http://farm8.staticflickr.com/7405/10452943914_d2dc85ae73_o.png" width="1392" height="552" alt="why3"></a>
+<br><br>
+<center><p> 
+<font color = "white"> <%= link_to '菜單上', menu_path, class: "btn btn-large btn-success" %></font>
+</center></p>
 
 </body>
 
