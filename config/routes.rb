@@ -16,7 +16,7 @@ Dine::Application.routes.draw do
   root :to => 'pins#index'
   get 'manage' => 'orderlists#manage'
   get 'admin' => 'pages#admin'
-  get 'cancel' => 'pages#cancel'
+  get 'return' => 'pages#return'
   get 'why' => 'pages#why'
   get 'service' => 'pages#service'
 	get 'privacy' => 'pages#privacy'
