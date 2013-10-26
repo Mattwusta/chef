@@ -2,7 +2,7 @@
 <html>
 
 <center><div class="page-header">
-  <font color="#5CA5FF" size ="6" face = "Baskerville Old Face">透過 Chef29 今晚大廚訂購餐點除了可以享受美味餐點外還有許多好處!</font>
+  <font color="#5CA5FF" size ="6" face = "Baskerville Old Face">除了可以享受美味料理外還有許多好處!</font>
 
 <% if user_signed_in? %>
 
@@ -14,7 +14,6 @@
   </font>
 </center>
 
-
 <head>
 <% content_for :head do %>
     <meta property="fb:app_id"          content="479820998782220" /> 
@@ -23,20 +22,17 @@
     <meta property="og:title"           content="Chef29 今晚大廚" /><meta property="og:description"     content="Chef29今晚大廚 －吃的更有品味更健康更省錢，同時做善事幫助弱勢朋友!" /> 
     <meta property="og:image"           content="http://farm4.staticflickr.com/3767/10453554634_0259a56e22.jpg" /> 
 <% end %>
-
-
 </head>
 
 <body>
 
-<img src="http://farm8.staticflickr.com/7359/10452876245_4cf8c39f61_o.png" width="1352" height="2178" alt="Why1"></a>
-<center><p> <br>
-<font color = "white"> <%= link_to '菜單上', menu_path, class: "btn btn-large btn-success" %></font>
-</center></p>
+  <img src="http://farm8.staticflickr.com/7359/10452876245_4cf8c39f61_o.png" width="1352" height="2178" alt="Why1"></a>
+  <center><p> <br>
+  <font color = "white"> <%= link_to '菜單上', menu_path, class: "btn btn-large btn-success" %></font></center></p>
 
-<img src="http://farm6.staticflickr.com/5472/10453170743_f557b48715_o.png" width="1360" height="1584" alt="blank2"></a>
+  <img src="http://farm6.staticflickr.com/5472/10453170743_f557b48715_o.png" width="1360" height="1584" alt="blank2"></a>
 <br><br>
-<% if user_signed_in? %>
+  <% if user_signed_in? %>
 <br>
 <br>
 <% else %>
