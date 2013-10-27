@@ -1,0 +1,12 @@
+<tr>
+<% if current_user == orderlist.user %>
+	<td><%= orderlist.id %></td>
+	<td> <%= orderlist.created_at %></td>
+	<td> <%= link_to orderlist.user.name, orderlist.user%></td>
+	<td> <%= link_to orderlist.user.email, orderlist.user%></td>
+	<td><%= link_to '訂單細節', orderlist %></td>
+	<td><%= link_to '取消訂單', alert_path %></td>
+
+<% else %>
+<% end %>   
+</tr>
