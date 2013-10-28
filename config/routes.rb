@@ -14,7 +14,7 @@ Dine::Application.routes.draw do
 
  
   root :to => 'pins#index'
-  get 'users' => 'users#index'
+  get 'usering' => 'users#index'
   get 'detail' => 'users#detail'
   get 'manage' => 'orderlists#manage'
   get 'admin' => 'pages#admin'
