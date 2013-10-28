@@ -6,17 +6,19 @@
   </center>
 
 
-<h2>註冊</h2>
-<br>
+<font color="gray" size ="5" face = "Baskerville Old Face">新會員註冊</font>
+<br><br>
 
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
     <%= f.full_error :image_file_size, class: "alert alert-error" %>
     <%= f.full_error :image_content_type, class: "alert alert-error" %>
-    <%= f.input :image, label: "上傳大頭照" %>
+    <%= f.input :image, label: "請上傳大頭照" %>
 
   	<%= f.input :name, :required => true, :autofocus => true %>
     <%= f.input :email, :required => true, :autofocus => true %>
+    <%= f.input :phone, label: "聯絡電話" %>
+    <%= f.input :address, label: "送餐地址" %>
     <%= f.input :password, :required => true %>
   
 
