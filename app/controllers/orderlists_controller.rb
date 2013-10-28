@@ -55,7 +55,7 @@ class OrderlistsController < ApplicationController
 
     respond_to do |format|
       if @orderlist.save
-        format.html { redirect_to @orderlist, notice: 'Orderlist was successfully created.' }
+        format.html { redirect_to @orderlist, notice: '訂單成功送出' }
         format.json { render json: @orderlist, status: :created, location: @orderlist }
       else
         format.html { render action: "new" }
