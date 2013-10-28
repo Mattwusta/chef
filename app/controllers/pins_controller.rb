@@ -7,7 +7,7 @@ class PinsController < ApplicationController
 
   # GET /pins
   # GET /pins.json
-    def index
+  def index
      @pins = Pin.search(params[:search])
      @pins = @pins.paginate(:page => params[:page], :per_page => 30)
 

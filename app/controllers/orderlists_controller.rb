@@ -13,7 +13,9 @@ class OrderlistsController < ApplicationController
   end
 
   def manage
-    @allorders = Orderlist.order("created_at desc").page(params[:page]).per_page(20)
+   
+    @orderlists = Orderlist.all
+    @allorders = Orderlist.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb
