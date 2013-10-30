@@ -8,11 +8,17 @@
 <div class="row">
   <div class="span6 offset3">
     <div class="well">
+      <% if current_user == @orderlist.user %>
+                <%= link_to '編輯', edit_orderlist_path(@orderlist) %> |
+            <% end %>
+            <%= link_to '上一頁', orderlists_path %><br><br>
       <font size = "3" color= "red">。餐點出貨日期為 2012/11/12 星期三 下午1:30分</font>
-        <br>
+    <br>
+
  <font size = "3" color= "red">。餐點付款截止時間為 2012/11/07 星期一 下午3:30分</font>
       <hr>
  <font size = "3" color= "red">請在完成匯款/轉賬餐點貨款後回來更新 1. 帳號末5碼 2.匯款金額!! (查看訂單>訂單細節>編輯>填入1.帳號末5碼 & 2.金額)</font>
+
 
  <hr>
            </font>
