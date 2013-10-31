@@ -19,6 +19,7 @@ Dine::Application.routes.draw do
   get 'manage' => 'orderlists#manage'
   get 'admin' => 'pages#admin'
   get 'return' => 'pages#return'
+  get 'faq' => 'pages#faq'
   get 'why' => 'pages#why'
   get 'service' => 'pages#service'
 	get 'privacy' => 'pages#privacy'
