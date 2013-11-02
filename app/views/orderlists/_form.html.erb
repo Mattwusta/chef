@@ -40,6 +40,9 @@
  <%= f.input :time, label: "送餐時間(隔周三下午）", as: :text, input_html: { :class => "span3", rows: "1", :placeholder => "下午 2-4點：請給兩個小時的時間空檔"} %>
 
  <%= f.input :reciever, label: "需要發票?", as: :text, input_html: { :class => "span3", rows: "1", :placeholder => "要/不用 - 若不用，發票也將捐出去"} %>
+
+
+ <%= f.input :detail, label: "備註", as: :text, input_html: { :class => "span5", rows: "4", :placeholder => "若您有特別需求，如不吃什麼，包裝需求，請在此填入。"} %>
  <hr>
   <font size = "3" color= "red" face = "Baskerville Old Face">以下完成餐點付款（轉賬/匯款）後再回來填入（查看訂單 > 訂單細節 > 編輯)</font>
   <br><br>
