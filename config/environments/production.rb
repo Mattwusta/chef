@@ -65,7 +65,22 @@ Dine::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+config.action_mailer.default_url_options = { :host => 'http://wwww.chef29.com' }
+
+config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "gurus.com.tw",
+  :user_name            => "gurus@gurus.com.tw",
+  :password             => "voyage129",
+  :authentication       => :plain,
+  :enable_starttls_auto => true
+}
+
+config.action_mailer.default_url_options = {
+  :host => "gurus.com.tw"
+}
+
 config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
