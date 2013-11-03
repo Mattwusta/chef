@@ -1,5 +1,5 @@
-<p>Welcome <%= @email %>!</p>
+<p>歡迎您來到Chef29 今晚大廚<%= @email %>!</p>
 
-<p>You can confirm your account email through the link below:</p>
+<p>請透過以下連結來完成您的EMAIL帳號確認！</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @token) %></p>
+<p><%= link_to '確認我的EMAIL', confirmation_url(@resource, :confirmation_token => @token) %></p>
