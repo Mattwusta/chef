@@ -1,4 +1,6 @@
-<h2>Change your password</h2>
+<font color="gray" size ="3" face = "Baskerville Old Face">更改密碼</font>
+<br><br>
+
 
 <%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= f.error_notification %>
@@ -7,12 +9,12 @@
   <%= f.full_error :reset_password_token %>
 
   <div class="form-inputs">
-    <%= f.input :password, :label => "New password", :required => true, :autofocus => true %>
-    <%= f.input :password_confirmation, :label => "Confirm your new password", :required => true %>
+    <%= f.input :password, :label => "新密碼", :required => true, :autofocus => true %>
+    <%= f.input :password_confirmation, :label => "重新確認新密碼", :required => true %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Change my password" %>
+    <%= f.button :submit, "更改我的密碼" %>
   </div>
 <% end %>
 
