@@ -1,5 +1,5 @@
 class Notice2sMailer < ActionMailer::Base
-   default :from => "noreply@gurus.com.tw"
+   default :from => "noreply@chef29.com"
   default :to => "matthew.wu328@gmail.com"
 
   def new_ordernew(ordernew)
