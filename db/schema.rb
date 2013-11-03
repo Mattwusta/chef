@@ -91,10 +91,10 @@ ActiveRecord::Schema.define(:version => 20131103052947) do
     t.string   "phone"
     t.string   "address"
     t.datetime "confirmable"
-    t.datetime "confirmed_at"
     t.string   "confirmation_token"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
+    t.datetime "confirmed_at"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
