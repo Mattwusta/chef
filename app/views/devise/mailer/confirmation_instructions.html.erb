@@ -1,5 +1,8 @@
 <p>歡迎您來到Chef29 今晚大廚<%= @email %>!</p>
-
+<br>
 <p>請透過以下連結來完成您的EMAIL帳號確認！</p>
 
-<p><%= link_to '確認我的EMAIL', confirmation_url(@resource, :confirmation_token => @token) %></p>
+<p><%= link_to '確認我的EMAIL帳號', confirmation_url(@resource, :confirmation_token => @token) %></p>
+
+<p><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">PS: 您透過Chef29 今晚大廚購買的第一份餐點是免費的哦！</font></p>
+<p><%= link_to '立即購買', 'http://www.chef29.com/orderlists/new' %></p>
