@@ -38,10 +38,12 @@
    <li><%= link_to "餐點付款帳號", account_path %></li>
    
    </Ul>
- 
-   <li><%= link_to "買1捐1", give_path %></li>
-   
+ <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">買1捐1</a>
 
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+   <li><%= link_to "買1餐，捐1餐", give_path %></li>
+   <li><%= link_to "捐贈記錄", orderlists_path %></li>
+   
    </Ul>  
  </ul>
   

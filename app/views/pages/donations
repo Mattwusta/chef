@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% content_for :head do %>
+    <meta property="fb:app_id"          content="479820998782220" /> 
+    <meta property="og:type"            content="website" /> 
+    <meta property="og:url"             content="http://www.chef29.com/know" /> 
+    <meta property="og:title"           content="Chef29 今晚大廚-捐贈記錄" /> 
+    <meta property="og:description"     content="Chef29今晚大廚－每個月在第一周將捐出前月買1捐1的金額。" /> 
+    <meta property="og:image"           content="http://farm4.staticflickr.com/3725/10454122506_02d9d49317.jpg" /> 
+<% end %>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+</head>
+
+<center><div class="page-header">
+  
+     <font color="gray" size ="6" face = "Baskerville Old Face">一家結合美食與科技的新創良心事業
+        </font>
+          <% if user_signed_in? %>
+
+<% else %>
+        </font>
+          <font color = "white" style="padding-left:60px;" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %>
+      </font>
+    <% end %>
+  </font>   
+</center>
+
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+ 
+  </ol>
+  <!-- Carousel items -->
+
+  <div class="carousel-inner">
+   <div class="active item"><img src="http://farm8.staticflickr.com/7416/10454139435_53031a18b7_o.png" width="1360" height="500" alt="knowB"></a></div>
+
+   <div class="item"><a href="http://labdisrupt.herokuapp.com" ><img src="http://farm3.staticflickr.com/2859/10622674833_d24535d0f0_o.png" width="1170" height="430" alt="company"></a></div>
+    
+  <div class="item"><img src="http://farm4.staticflickr.com/3786/10622313094_612ce7aeb3_o.png" width="1450" height="430" alt="knowA"></a></div>
+
+  <div class="item"><a href="http://www.chef29.com/give" ><img src="http://farm3.staticflickr.com/2816/10622374494_d1d237984f_o.png" width="1360" height="500" alt="knowC"></a></div>
+
+    <div class="item"><img src="http://farm4.staticflickr.com/3718/10586908384_c3dd3c2431_o.png" width="1360" height="500" alt="know4"></a></div>
+  </div>
+
+  <!-- Carousel nav -->
+ <div style="padding:50px;">
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a></div>
+
+</div>
+
+<hr>
+<center><font color = "gray" size ="6" face = "Baskerville Old Face"> 我們愛吃更愛自己料理 </font></center>
+<center><i><font color = "gray" size ="4" face = "Baskerville Old Face" >跟著大廚學做各國美食料理。</font></i></center>
+<hr>
+
+<div id="2Carousel" class="carousel slide">
+  <ol class="carousel-indicators">
+  </ol>
+
+  <!-- Carousel items -->
+
+  <div class="carousel-inner">
+   <div class="active item"><a href="" ><img src="http://farm4.staticflickr.com/3705/10454100313_71763e5be7_o.png" width="1400" height="361" alt="dish1"></a></div>
+    
+  <div class="item"><a href="" ><img src="http://farm4.staticflickr.com/3808/10453943315_f71a855ca7_o.png" width="1400" height="359" alt="dish2"></a></div>
+
+  <div class="item"><a href="" ><img src="http://farm4.staticflickr.com/3771/10454190923_6a5f67e5dd_o.png" width="1342" height="524" alt="know1"></a></div>
+  </div>
+<!-- Carousel nav -->
+</div>
+
+<hr>
+<img src="http://farm3.staticflickr.com/2865/10470664875_c053d6e4a7_o.png" width="1400" height="300" alt="recipe"></a>
+
+<center>
+ <% if user_signed_in? %>
+
+<% else %>
+        </font>
+          <font color = "white" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %></font>
+   
+            <% end %>
+        </font>
+</center>
+<hr>
+<img src="http://farm8.staticflickr.com/7355/10470674054_a01205e6a9_o.png" width="1400" height="300" alt="FRUITS"></a>
+<br>
+<center><p> <br>
+<font color = "white"> <%= link_to '菜單上', menu_path, class: "btn btn-large btn-success" %></font><hr>
+</center></p>
+<br>
+<img src="http://farm3.staticflickr.com/2864/10470674014_8e40e765d8_o.png" width="1400" height="329" alt="delivery"></a>
+<br>
+<center><p> <br>
+<font color = "white"> <%= link_to '菜單上', menu_path, class: "btn btn-large btn-success" %></font>
+</center></p><hr>
+<br>
+<img src="http://farm8.staticflickr.com/7295/10549225195_a48c30f5ee_o.png" width="1400" height="300" alt="taxi2"></a>
+
+<center><font color = "gray" size ="6" face = "Baskerville Old Face"> BON APPETIT! </font></center>
+<br>
+<center>
+ <% if user_signed_in? %>
+
+<% else %>
+        </font>
+          <font color = "white" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %></font>
+   
+            <% end %>
+        </font>
+</center>
+
+<script type="text/javascript">stLight.options({publisher: "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "googleplus", "pinterest", "baidu", "email", "blogger"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44036574-1', 'chef29.com');
+  ga('send', 'pageview');
+
+</script>
+</html>
