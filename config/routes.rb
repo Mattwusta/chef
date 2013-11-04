@@ -33,6 +33,7 @@ Dine::Application.routes.draw do
   get 'dish3' => 'pages#dish3' 
   get 'account' => 'pages#account' 
   get 'donations' => 'pages#donations' 
+    get 'pinterest-2344a' => 'pages#pinterest-2344a'
  
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
