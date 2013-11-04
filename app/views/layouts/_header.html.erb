@@ -48,7 +48,7 @@
   <ul class="nav pull-right">
     <% if user_signed_in? %>
    
-      <li><%= link_to( '0917634129', ) %></li>
+      
       <li><%= link_to "購買＋", new_orderlist_path %></li>
       <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">個人</a>
 
@@ -64,9 +64,7 @@
 
 <% else %>
   <ul class="nav pull-right">
-    <li><%= link_to( '0917634129',) %></li>
     <li><%= link_to '訂閱',  'https://tinyletter.com/Chef29' %></li>
-
     <li><%= link_to '登入',  new_user_session_path %></li>
     <li><form action="/pins" calss="navbar-search pull-left" style="padding:5px;"  method= "get">
     <input id="search" type="text" name="search" class="search-query" placeholder="search"></form></li>
