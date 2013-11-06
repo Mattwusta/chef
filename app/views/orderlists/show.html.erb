@@ -6,7 +6,7 @@
    
 
 <div class="row">
-  <div class="span6 offset3">
+  <div class="span9 offset2">
     <div class="well">
       <% if current_user == @orderlist.user %>
                 <%= link_to '編輯', edit_orderlist_path(@orderlist) %> |
@@ -95,6 +95,10 @@
 
             <p>總共購買了：
             <%= (@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) %>份餐點
+            </p>
+
+             <p>付款方式：
+              <%= @orderlist.paylater %>
             </p>
 
              <p>備註：

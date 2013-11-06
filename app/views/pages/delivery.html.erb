@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% content_for :head do %>
+    <meta property="fb:app_id"          content="479820998782220" /> 
+    <meta property="og:type"            content="website" /> 
+    <meta property="og:url"             content="http://www.chef29.com/know" /> 
+    <meta property="og:title"           content="Chef29 今晚大廚-餐點快遞 今晚大廚" /> 
+    <meta property="og:description"     content="Chef29 今晚大廚的目標是把新鮮的食材送到您手上！" /> 
+    <meta property="og:image"           content="http://farm8.staticflickr.com/7325/10641844363_8f23ebe1a9_o.jpg" /> 
+<% end %>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+</head>
+
+<center><div class="page-header">
+  
+     <font color="gray" size ="6" face = "Baskerville Old Face">目標是把新鮮的食材送到您手上！
+        </font>
+          <% if user_signed_in? %>
+
+<% else %>
+        </font>
+          <font color = "white" style="padding-left:60px;" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %>
+      </font>
+    <% end %>
+  </font>   
+</center>
+
+<img src="http://farm4.staticflickr.com/3688/10702488213_d026c03b72_o.png" width="1400" height="799" alt="10549225195_a48c30f5ee_o"></a>
+
+<center>
+ <% if user_signed_in? %>
+
+<% else %>
+        </font>
+          <font color = "white" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %></font>
+   
+            <% end %>
+        </font>
+</center>
+
+<script type="text/javascript">stLight.options({publisher: "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "googleplus", "pinterest", "baidu", "email", "blogger"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44036574-1', 'chef29.com');
+  ga('send', 'pageview');
+
+</script>
+</html>
