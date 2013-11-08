@@ -1,10 +1,13 @@
 class PagesController < ApplicationController
-	http_basic_authenticate_with name: "manage", password: "steviematt", except: [:help, :dogood, :lovemeal, :doogood, :hunger,:delivery, :donations, :_home, :faq, :account, :return, :dish1, :dish2, :dish3, :give, :how, :know, :list, :menu, :privacy, :search, :service, :shop, :why, :cancel]
+	http_basic_authenticate_with name: "manage", password: "steviematt", except: [:about, :help, :dogood, :lovemeal, :doogood, :hunger,:delivery, :donations, :_home, :faq, :account, :return, :dish1, :dish2, :dish3, :give, :how, :know, :list, :menu, :privacy, :search, :service, :shop, :why, :cancel]
 
 def home
 end
 
 def admin
+end
+
+def about
 end
 
 def why
