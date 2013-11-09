@@ -20,6 +20,7 @@ gem 'friendly_id', '~>4.0.10'
 gem 'jquery-rails'
 gem 'open-meta-tags', :require => 'open_meta_tags'
 gem 'pin_it'
+gem 'newrelic_rpm'
 
 
 
