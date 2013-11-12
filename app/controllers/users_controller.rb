@@ -5,6 +5,7 @@ http_basic_authenticate_with name: "manage", password: "steviematt", except: [:s
 
 def index
 @users = User.all
+@users = User.order("created_at desc")
 end
 
 def detail
