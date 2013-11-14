@@ -9,23 +9,36 @@
 <font color="gray" size ="5" face = "Baskerville Old Face">新會員註冊</font>
 <br><br>
 
+<div class="row-fluid">
+  <div class="span3" >
+
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
     
 
-  	<%= f.input :name, label: "中文姓名（收餐點人）", :required => true, :autofocus => true %>
+    <%= f.input :name, label: "中文姓名（收餐點人）", :required => true, :autofocus => true %>
     <%= f.input :email, :required => true, :autofocus => true %>
     <%= f.input :phone, label: "聯絡電話" %>
     <%= f.input :address, label: "送餐地址" %>
     <%= f.input :password, :required => true %>
-  
 
+ </div>
+           
+  <div class="span8"  ><center>
+ <a href="http://www.chef29.com/menu" ><img src="http://farm8.staticflickr.com/7289/10852093814_31eb343805_o.png" width="1102" height="508" alt="fee3"></a></center>
+</div>
 
-  <div class="form-actions">
+</div>
+
+ <div class="form-actions">
     <%= f.button :submit, "註冊" %>
   </div>
-  當您註冊並開始使用本服務代表您已經閱讀了解並同意本服務條款
-<% end %>
 
+  當您註冊並開始使用本服務代表您已經閱讀了解並同意本服務條款<%= link_to "Service 服務條款",service_path %>
+<% end %>
+<br>
 <%= render "devise/shared/links" %>
 </div>
+</div>
+
+
