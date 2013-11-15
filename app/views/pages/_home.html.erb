@@ -71,13 +71,9 @@
 
     <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm6.staticflickr.com/5479/9727449563_cebf51ffec_o.png" width="1400" height="301" alt="fresh3"></a></div>
 
-   
-
     <div class="item"><a href="http://www.chef29.com/how" ><img src="http://farm8.staticflickr.com/7422/10623798393_54da7fdf34_o.png" width="1454" height="450" alt="ing del"></a></div>
 
     <div class="item"><a href="http://www.chef29.com/how"><img src="http://farm8.staticflickr.com/7359/9727371749_a7cdb147fc_o.png" width="1400" height="300" alt="cooking"></a></div>
-
-  
 
     <div class="item"><a href="http://www.chef29.com/how"><img src="http://farm4.staticflickr.com/3767/9730598962_1648f0cf2e_o.png" width="1400" height="299" alt="3star"></a></div>
 
@@ -91,9 +87,7 @@
 </div>
 </div>
 
-<p> 
-<font color = "white"> <%= link_to '註冊', new_user_registration_path, class: "btn btn-large btn-primary" %></font>
-</p>
+
 <p> 
 <div class="fb-like" data-href="http://www.chef29.com" data-width="450" data-show-faces="true" data-send="true"></div>
       </p>
@@ -105,8 +99,27 @@
 <% else %>
 <hr>
 <center>
-  <font color="#5CA5FF" size ="6" face = "Baskerville Old Face">有意義的精緻美食</font><br>
- <i><font color="gray" size ="4" face = "Baskerville Old Face">Fine Dining With A Purpose</font></i>
+<div class="row-fluid">
+  
+  <div class="span3"  ><center>
+    <font color = "gray" size ="5" face = "Baskerville Old Face"> <%= link_to '註冊', new_user_registration_path%></font> </center>
+</div> 
+
+  <div class="span3"><center>
+  <font color = "gray" size ="5" face = "Baskerville Old Face"> <%= link_to 'MENU', menu_path%></font> </center>
+  </div> 
+
+
+  <div class="span3"><center>
+  <font color = "gray" size ="5" face = "Baskerville Old Face"> <%= link_to '如何購買', how_path%></font> </center>
+  </div>
+
+   <div class="span3"><center>
+  <font color = "gray" size ="5" face = "Baskerville Old Face"> <%= link_to '購買', new_orderlist_path %></font> </center>
+
+  </div>
+
+</div>
 
 </center>
 

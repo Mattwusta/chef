@@ -6,6 +6,9 @@
  
   </center>
 
+<div class="row-fluid">
+  <div class="span3" >
+
 <font color="gray" size ="5" face = "Baskerville Old Face">登入</font>
 <br><br>
 
@@ -15,10 +18,22 @@
     <%= f.input :password, :required => false %>
     <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
   </div>
+</div>
+           
+  <div class="span8"  ><center>
+ <a href="http://www.chef29.com/menu" ><img src="http://farm8.staticflickr.com/7289/10852093814_31eb343805_o.png" width="1102" height="508" alt="fee3"></a></center>
+</div>
+</div>
 
-  <div class="form-actions">
+ <div class="form-actions">
     <%= f.button :submit, "登入" %>
   </div>
-<% end %>
 
+<% end %>
+<br>
 <%= render "devise/shared/links" %>
+</div>
+</div>
+
+
+
