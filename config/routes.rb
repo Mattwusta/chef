@@ -39,6 +39,7 @@ Dine::Application.routes.draw do
   get 'lovemeal' => 'pages#lovemeal'
   get 'help' => 'pages#help'
   get 'about' => 'pages#about'
+  get 'line' => 'pages#line'
  
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
