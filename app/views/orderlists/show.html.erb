@@ -11,7 +11,9 @@
       <% if current_user == @orderlist.user %>
                 <%= link_to '編輯', edit_orderlist_path(@orderlist) %> |
             <% end %>
-            <%= link_to '上一頁', orderlists_path %><br><br>
+            <%= link_to '上一頁', orderlists_path %><br>
+<%= link_to '運費解說', delivery_path %><br>
+  <br>
       
  <font size = "3" color= "red">請在完成匯款/轉賬餐點貨款後回來更新 1. 帳號末5碼 2.匯款金額!! (查看訂單>訂單細節>編輯>填入1.帳號末5碼 & 2.金額)</font>
 

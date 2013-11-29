@@ -33,7 +33,9 @@
 
 <font size = "2" color = "gray">餐點快遞費用於餐點送達時由買家支付。 </font><br>
 
-<font size ="2" color = "gray">餐點數量可以輸入0，但請不要留白!</font><br><br>
+<font size ="2" color = "gray">餐點數量可以輸入0，但請不要留白!</font><br>
+<font size ="2"><%= link_to '運費解說', delivery_path %></font><br>
+<br>
 
 <%= f.input :dish1, label: "1號餐 $299 (餐點份量）", as: :integer, input_html: { :class => "span3
 ", rows: "2", :placeholder => "不可留空白" }%>
