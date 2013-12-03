@@ -15,7 +15,7 @@
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
     
-
+    <%= f.input :image, label: "上傳大頭照,不上傳也可。" %>
     <%= f.input :name, label: "中文姓名（收餐點人）", :required => true, :autofocus => true %>
     <%= f.input :email, :required => true, :autofocus => true %>
     <%= f.input :phone, label: "聯絡電話" %>

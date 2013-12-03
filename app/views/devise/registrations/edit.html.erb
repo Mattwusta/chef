@@ -10,7 +10,10 @@
 
 <div class="container-fluid">
   <div class="row-fluid">
-  
+   <div class="span2">
+     <%= image_tag @user.image %>
+    </div>
+ 
  
     <div class="span10">
    <font color="gray" size="5"><b> <%= @user.name %></b></font><br>
@@ -42,7 +45,7 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    
+    <%= f.input :image, label: "更換大頭照" %>
     <%= f.input :name, :required => true, :autofocus => true %>
     <%= f.input :email, :required => true, :autofocus => true %>
     <%= f.input :phone, label: "聯絡電話" %>
