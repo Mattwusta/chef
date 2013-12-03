@@ -9,7 +9,7 @@
   <div class="span10 offset1">
     <div class="well">
       <% if current_user == @orderlist.user %>
-                <%= link_to '編輯', edit_orderlist_path(@orderlist) %> |
+                <%= link_to '修改訂單', edit_orderlist_path(@orderlist) %> |
             <% end %>
             <%= link_to '上一頁', orderlists_path %><br>
 <%= link_to '運費解說', delivery_path %><br>
@@ -33,13 +33,13 @@
             <p>訂購人：
               <%= @orderlist.user.name %>
             </p>
-            <hr>
+         <br>
 
             <% if @orderlist.user.phone.present? %>
             <p>收餐人電話：
               <%= @orderlist.user.phone %>
             </p>
-            <hr>
+          <br>
             <% else %>
             <% end %>
 
@@ -47,25 +47,38 @@
             <p>收餐地址：
               <%= @orderlist.user.address %>
             </p>
-            <hr>
+            <br>
             <% else %>
             <% end %>
-
-<% if @orderlist.phone.present? %>
+          
+             <% if @orderlist.user.phone.present? %>
             <p>聯絡電話：
-              <%= @orderlist.phone %>
+              <%= @orderlist.user.phone %>
             </p>
-            <hr>
+            <br>
             <% else %>
             <% end %>
 
-            <p>聯絡人EMAIL：
+
+
+            <p>訂餐人EMAIL：
               <%= @orderlist.user.email %>
             </p>
-            <hr>
+           
             
-            <% if @orderlist.phone.present? %>
-            <p>送餐地址：
+            <% if @orderlist.gift.present? %>
+            <hr>
+              <font size = "3" color= "red">送禮：需先完成付款（包括運費）</font>
+              <br><br>
+            <p>收禮物：
+              <%= @orderlist.gift %>
+            </p>
+              <br>
+               <p>聯絡電話：
+              <%= @orderlist.phone %>
+            </p>
+            <br>
+            <p>收禮地址：
               <%= @orderlist.address %>
             </p>
             <hr>
@@ -150,7 +163,7 @@
 
 
             <% if current_user == @orderlist.user %>
-                <%= link_to '編輯', edit_orderlist_path(@orderlist) %> |
+                <%= link_to '修改訂單', edit_orderlist_path(@orderlist) %> |
             <% end %>
             <%= link_to '上一頁', orderlists_path %>
         </div>
