@@ -52,11 +52,14 @@
 <hr>
 <img src="http://farm4.staticflickr.com/3765/11112004814_5aeab96b1e_o.png" width="1447" height="800" alt="weekly">
 <hr>
-<img src="http://farm8.staticflickr.com/7414/11111942305_5a0687eb17_o.png" width="1348" height="446" alt="buy">
+<img src="http://farm6.staticflickr.com/5484/11304981893_f58ffe26e2_o.png" width="1348" height="446" alt="buy">
 
 <div class=" hero-unit">
 
-<font color="red" size ="4" face = "Baskerville Old Face">每次需購買最少兩份餐點 <br>兩份餐點可選貨到付款，3份以上需先完成匯款／轉賬。<br>
+<font color="red" size ="4" face = "Baskerville Old Face">每次需購買最少2份餐點 <br>臺北／新北指定地區 - 5份餐點以下可選貨到付款(機車快遞），5份以上需先完成匯款／轉賬。
+<br>
+臺北／新北指定地區(以外) - 需先完成餐點與運費付款才出貨（計程車無貨到付款）。
+<br>
 可送禮給別人，但需先完成餐點付款＋運費。
 </font><br>
 
@@ -82,11 +85,11 @@
 
 <%= f.input :phone, label: "收餐點聯絡電話", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "與註冊時電話不同在填入（0988888888）"} %>
  
- <%= f.input :address, label: "收餐點地址", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "與註冊時地址不同在填入（106台北市金山南路1段10號5樓...）"} %>
+ <%= f.input :address, label: "收餐點地址", as: :text, input_html: { :class => "span4", rows: "2", :placeholder => "與註冊時地址不同在填入（106台北市金山南路1段10號5樓...）"} %>
 <hr>
 
 
- <%= f.input :time, label: "送餐日期與時間(隔周星期3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 3，4或5 －下午2-4點"} %>
+ <%= f.input :time, label: "送餐日期與時間(隔周星期3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 3，4或5 －早上：12點前/下午： 12-5點"} %>
 
  <%= f.input :reciever, label: "發票名稱", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "要/不用 - 若不用，發票也將捐出去"} %>
 
@@ -94,10 +97,10 @@
  <hr>
   <%= f.input :discount, label: "免費餐點密碼", as: :text, input_html: { :class => "span5", rows: "2", :placeholder => "若您有免費餐點密碼請在此輸入，付款時請自行扣除＄299. 與會員第一份餐點免費優惠需要分開使用，輸入錯誤密碼不會出貨。"} %>
  <hr>
-  <font size = "3" color= "red" face = "Baskerville Old Face">貨到付款： 訂購兩份餐點可選貨到付款</font>
+  <font size = "3" color= "red" face = "Baskerville Old Face">貨到付款： 臺北特定地區訂購5份以下餐點可貨到付款（請看<%= link_to '機車快遞說明', delivery_path %>）<br> </font>
   <%= f.input :paylater, label: "付款方式", as: :text, input_html: { :class => "span3", rows: "1", :placeholder => "請填入： 貨到付款/轉賬"} %>
 <hr>
-  <font size = "3" color= "red" face = "Baskerville Old Face">訂購三份餐點以上需用匯款轉賬： 以下完成餐點付款（轉賬/匯款）後再回來填入（查看訂單 > 訂單細節 > 編輯)</font>
+  <font size = "3" color= "red" face = "Baskerville Old Face">其他都需先完成餐點付款： 以下完成餐點付款（轉賬/匯款）後再回來填入（查看訂單 > 訂單細節 > 編輯)</font>
   <br><br>
 
  <%= f.input :account, label: "匯款轉帳(帳號末5碼）", as: :text, input_html: { :class => "span3", rows: "1", :placeholder => "請輸入您帳號末5碼，對帳用。"} %>

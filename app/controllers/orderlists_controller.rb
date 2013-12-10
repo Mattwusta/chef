@@ -74,7 +74,7 @@ class OrderlistsController < ApplicationController
 
     respond_to do |format|
       if @orderlist.update_attributes(params[:orderlist])
-        format.html { redirect_to @orderlist, notice: 'Orderlist was successfully updated.' }
+        format.html { redirect_to @orderlist, notice: '完成訂單更新' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
