@@ -1,5 +1,5 @@
 class Orderlist < ActiveRecord::Base
-  attr_accessible :description, :dish1, :gift, :re, :discount, :paylater, :detail, :reciever, :account, :wireamount, :dish2, :dish3, :dishsum, :time, :phone, :address
+  attr_accessible :description, :dish1, :gift, :re, :ship, :discount, :paylater, :detail, :reciever, :account, :wireamount, :dish2, :dish3, :dishsum, :time, :phone, :address
  
 
   belongs_to :user
