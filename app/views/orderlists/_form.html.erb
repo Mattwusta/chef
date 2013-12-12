@@ -52,30 +52,31 @@
 <hr>
 <img src="http://farm4.staticflickr.com/3765/11112004814_5aeab96b1e_o.png" width="1447" height="800" alt="weekly">
 <hr>
-<img src="http://farm6.staticflickr.com/5484/11304981893_f58ffe26e2_o.png" width="1348" height="446" alt="buy">
+<img src="http://farm8.staticflickr.com/7292/11339742954_301dc4c444_o.png" width="1348" height="446" alt="buy">
 
 <div class=" hero-unit">
 
-<font color="red" size ="4" face = "Baskerville Old Face">每次需購買最少2份餐點 <br>臺北／新北指定地區 - 5份以下可貨到付款(快遞運費自付），5份以上需先完成付款（計程車運費貨到自付，無貨到付款）。
+<font color="red" size ="4" face = "Baskerville Old Face">每次需購買最少2份餐點 <br>
+可貨到付款 ＋ 運費自費（選貨到付款快遞加收＄30）
 <br>
-臺北／新北指定地區(以外／全臺) - 需先完成餐點與運費付款才出貨。 （請參考<%= link_to '運費解說', delivery_path %>）
+可先完成餐點付款 ＋ 運費
 <br>
 可送禮給別人，但需先完成餐點付款＋運費。
 </font><br>
 
-<font size = "2" color = "gray">餐點快遞費用於餐點送達時由買家支付。 </font><br>
+
 
 <font size ="2" color = "gray">餐點數量可以輸入0，但請不要留白!</font><br>
 <font size ="2"><%= link_to '運費解說', delivery_path %></font><br>
 <br>
 
-<%= f.input :dish1, label: "1號餐點 $299 (餐點份量）", as: :integer, input_html: { :class => "span3
+<%= f.input :dish1, label: "1號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3
 ", rows: "2", :placeholder => "不可留空白" }%>
 
-<%= f.input :dish2, label: "2號餐點 $299 (餐點份量）", as: :integer, input_html: { :class => "span3
+<%= f.input :dish2, label: "2號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3
 ", rows: "2", :placeholder => "不可留空白" }%>
 
-<%= f.input :dish3, label: "3號餐點 $299 (餐點份量）", as: :integer, input_html: { :class => "span3
+<%= f.input :dish3, label: "3號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3
 ", rows: "2", :placeholder => "不可留空白" }%>
 
 <hr>
@@ -89,18 +90,18 @@
 <hr>
 
 
- <%= f.input :time, label: "送餐日期與時間(隔周星期3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 3，4或5 －早上：12點前/下午： 12-5點"} %>
+ <%= f.input :time, label: "送餐日期(隔周星期3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 3，4或5 －早上：12點前/下午： 12-5點"} %>
 
  <%= f.input :reciever, label: "發票名稱", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "要/不用 - 若不用，發票也將捐出去"} %>
 
- <%= f.input :detail, label: "備註", as: :text, input_html: { :class => "span5", rows: "4", :placeholder => "若您有特別需求，如不吃什麼，團體訂購包裝需求(省運費），請在此填入。"} %>
+ <%= f.input :detail, label: "備註", as: :text, input_html: { :class => "span5", rows: "3", :placeholder => "若您有特別需求，如不吃什麼，團體訂購包裝需求(省運費），請在此填入。"} %>
  <hr>
-  <%= f.input :discount, label: "免費餐點密碼", as: :text, input_html: { :class => "span5", rows: "3", :placeholder => "若您有免費餐點密碼請在此輸入，付款時請自行扣除＄299. 與會員第一份餐點免費優惠需要分開使用，輸入錯誤密碼不會出貨。"} %>
+  <%= f.input :discount, label: "免費餐點密碼", as: :text, input_html: { :class => "span5", rows: "2", :placeholder => "若有免費餐點密碼請在此輸入，付款時請扣除＄299. 與會員第一份餐點免費需要分開用，輸入錯誤密碼不出貨。"} %>
  <hr>
-  <font size = "3" color= "red" face = "Baskerville Old Face">貨到付款(運費自費）： 臺北特定地區訂購5份以下餐點可貨到付款(餐點＋運費）－ 請看<%= link_to '機車快遞說明', delivery_path %><br> </font>
-  <%= f.input :paylater, label: "付款方式", as: :text, input_html: { :class => "span3", rows: "2", :placeholder => "請填入： 臺北貨到付款（＋運費）/轉賬"} %>
+  <font size = "3" color= "red" face = "Baskerville Old Face">貨到付款／轉賬： 請看<%= link_to '（餐點運費）', delivery_path %><br> </font>
+  <%= f.input :paylater, label: "付款方式", as: :text, input_html: { :class => "span3", rows: "2", :placeholder => "請填入： 貨到付款/轉賬＋運費"} %>
 <hr>
-  <font size = "3" color= "red" face = "Baskerville Old Face">其他都需先完成餐點付款： 以下完成餐點付款（轉賬/匯款）後再回來填入（查看訂單 > 訂單細節 > 編輯)</font>
+  <font size = "3" color= "red" face = "Baskerville Old Face"> 以下完成餐點付款 ＋運費後再回來填入（查看訂單 > 訂單細節 > 修改訂單)</font>
   <br><br>
 
  <%= f.input :account, label: "匯款轉帳(帳號末5碼）", as: :text, input_html: { :class => "span3", rows: "1", :placeholder => "請輸入您帳號末5碼，對帳用。"} %>
