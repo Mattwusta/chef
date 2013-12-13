@@ -24,7 +24,7 @@
               <%= @orderlist.id %>
             </p>
             
-            <hr>
+         
             <p>訂購時間：
               <%= @orderlist.created_at %>
             </p>
@@ -52,17 +52,9 @@
              
             <% end %>
 
- <% if @orderlist.user.address.present? %>
-             <p>＊指定送餐地址：
-              <%= @orderlist.address %>
-            </p>
-            <br>
-            <% else %>
-            <% end %>
-
           
              <% if @orderlist.user.phone.present? %>
-            <p>聯絡電話：
+            <p>訂購人聯絡電話：
               <%= @orderlist.user.phone %>
             </p>
             <br>
@@ -71,7 +63,7 @@
 
 
 
-            <p>訂餐人EMAIL：
+            <p>訂購人EMAIL：
               <%= @orderlist.user.email %>
             </p>
            
@@ -85,16 +77,16 @@
             </p>
             <% else %>
             <% end %>
+
             <hr>
               <br>
-               <p>收餐人手機：
+               <p>收餐人聯絡電話：
               <%= @orderlist.phone %>
             </p>
             <br>
-            <p>指定送餐地址：
+            <p>新指定送餐地址：
               <%= @orderlist.address %>
             </p>
-            <hr>
             
 
             <p>送餐時間：
