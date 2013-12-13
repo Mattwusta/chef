@@ -44,7 +44,7 @@
             <% end %>
 
             <% if @orderlist.user.address.present? %>
-            <p>註冊收餐地址：
+            <p>原送餐地址：
               <%= @orderlist.user.address %>
             </p>
             <br>
@@ -53,7 +53,7 @@
             <% end %>
 
  <% if @orderlist.user.address.present? %>
-             <p>指定送餐地址：
+             <p>＊指定送餐地址：
               <%= @orderlist.address %>
             </p>
             <br>
@@ -88,7 +88,7 @@
               <%= @orderlist.phone %>
             </p>
             <br>
-            <p>指定餐地址：
+            <p>指定送餐地址：
               <%= @orderlist.address %>
             </p>
             <hr>
@@ -152,7 +152,7 @@
               <%= @orderlist.account %>
             </p>
 
-            <p>匯款/轉帳金額：$
+            <p>匯款/轉帳金額：
               <%= @orderlist.wireamount %>
             </p>
 
