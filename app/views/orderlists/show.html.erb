@@ -83,6 +83,9 @@
             <p>收禮人：
               <%= @orderlist.gift %>
             </p>
+            <% else %>
+            <% end %>
+            <hr>
               <br>
                <p>收餐人手機：
               <%= @orderlist.phone %>
@@ -92,8 +95,7 @@
               <%= @orderlist.address %>
             </p>
             <hr>
-            <% else %>
-            <% end %>
+            
 
             <p>送餐時間：
               <%= @orderlist.time %>
