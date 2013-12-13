@@ -44,12 +44,22 @@
             <% end %>
 
             <% if @orderlist.user.address.present? %>
-            <p>收餐地址：
+            <p>註冊收餐地址：
               <%= @orderlist.user.address %>
             </p>
             <br>
             <% else %>
+             
             <% end %>
+
+ <% if @orderlist.user.address.present? %>
+             <p>指定送餐地址：
+              <%= @orderlist.address %>
+            </p>
+            <br>
+            <% else %>
+            <% end %>
+
           
              <% if @orderlist.user.phone.present? %>
             <p>聯絡電話：
@@ -78,7 +88,7 @@
               <%= @orderlist.phone %>
             </p>
             <br>
-            <p>收餐地址：
+            <p>指定餐地址：
               <%= @orderlist.address %>
             </p>
             <hr>
