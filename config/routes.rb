@@ -40,6 +40,7 @@ Dine::Application.routes.draw do
   get 'help' => 'pages#help'
   get 'about' => 'pages#about'
   get 'line' => 'pages#line'
+  get 'side' => 'pages#side'
  
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
