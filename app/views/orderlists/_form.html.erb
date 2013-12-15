@@ -114,7 +114,7 @@
 <hr>
 
 
- <%= f.input :time, label: "送餐日期(隔周星期3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 3，4或5 －早上：12點前/下午： 12-5點"} %>
+ <%= f.input :time, label: "送餐日期(隔周星期2，3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 2，3，4或5 －早上：12點前/下午： 12-5點"} %>
 
  <%= f.input :reciever, label: "發票名稱", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "要/不用 - 若不用，發票也將捐出去"} %>
 
@@ -136,7 +136,7 @@
 </div>
 
   <div class="form-actions">
-    <%= f.button :submit, class: "btn btn-primary" %>
+    <%= f.button :submit, class: "btn btn-primary" %> 送出訂單!!
   </div>
 <% end %>
 
