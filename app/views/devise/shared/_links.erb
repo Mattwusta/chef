@@ -7,7 +7,7 @@
 <% end -%>
 
 <%- if devise_mapping.recoverable? && controller_name != '' %>
-  <%= link_to "忘記密碼", new_password_path(resource_name) %> <br />
+  <%= link_to "忘記密碼 (您是否已經註冊過，卻忘了驗證您的EMAIL，請到您的EMAIL驗證信箱裡尋找Chef29 的EMAIL並完成驗證信箱。）", new_password_path(resource_name) %> <br />
 <% end -%>
 
 
