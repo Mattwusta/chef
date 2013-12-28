@@ -108,8 +108,22 @@
               <%= @orderlist.dish3 %>份
             </p>
 
+             <p>4號餐：
+              <%= @orderlist.dish4 %>份
+            </p>
+           
+ 
+            <p>5號餐：
+              <%= @orderlist.dish5 %>份
+            </p>
+            
+
+            <p>6號餐：
+              <%= @orderlist.dish6 %>份
+            </p>
+
             <p>總共購買了：
-            <%= (@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) %>份餐點
+            <%= (@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3 + @orderlist.dish4 + @orderlist.dish5 + @orderlist.dish6) %>份餐點
             </p>
 
              <p>付款方式：
@@ -124,7 +138,7 @@
 
             
             <p> 餐點費用（未加運費）＄
-            <%= ((@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3) *699) %>
+            <%= ((@orderlist.dish1 + @orderlist.dish2 + @orderlist.dish3 + @orderlist.dish4 + @orderlist.dish5 + @orderlist.dish6) *299) %>
             （餐點運費請看<%= link_to '運費說明', delivery_path %>）</p>
 
             <font size = "2" color= "red">新會員第一份餐點免費：若您第一次溝買，請在以上購買金額扣除＄299。（＄299以外特別餐點不能使用）</font>
