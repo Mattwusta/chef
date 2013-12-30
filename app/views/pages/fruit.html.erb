@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<center><div class="page-header">
+ <font color="gray" size ="6" face = "Baskerville Old Face">一週水果箱 ｜ Weekly Fruit Box</font>
+
+<% if user_signed_in? %>
+<% else %>
+  <font color = "white" style="padding-left:60px;" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %></font>
+    <% end %>
+  </font>
+</center>
+
+<head>
+  <% content_for :head do %>
+    <meta property="fb:app_id"          content="479820998782220" /> 
+    <meta property="og:type"            content="website" /> 
+    <meta property="og:url"             content="http://www.chef29.com/fruit" /> 
+    <meta property="og:title"           content="Chef29 今晚大廚 - 一週水果箱" /><meta property="og:description"     content="Chef29 今晚大廚 為您採買一週的水果份量，包裝好後送到您府上，您也可以把水果箱當禮盒送人。每當您購買一份水果箱，我們也會給出一餐或同一餐的金額幫助弱勢朋友與貧困兒童。" /> 
+    <meta property="og:image"           content="http://farm4.staticflickr.com/3728/11637303955_cb2bd10a5a_o.jpg" /> 
+<% end %>
+
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
+  <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
+</head>
+
+<body>
+<center>
+<img src="http://farm6.staticflickr.com/5537/11637613974_b4ccf6fc3b_o.png" width="1347" height="447" alt="Schedule"></a>
+</center>
+<br>
+<img src="http://farm4.staticflickr.com/3828/11638001356_438d356696_o.png" width="1192" height="1262" alt="fruit box description"></a>
+<hr>
+
+
+  <font size = "3" color= "red">。下週出貨水果箱訂購截止時間為本週星期五 下午 1:30分 </font>
+<br>
+  <font size = "3" color= "red">。下週出貨水果箱付款截止時間為本週星期五 下午3:30分。 </font>
+  <br>
+  <font size = "3" color= "red">。下週出貨水果箱出貨時間為隔週星期三，四與五中午開始。 </font>
+  <br>
+  <font size = "3" color= "red">。水果箱每人份 ＄299 </font>
+   <br>
+  <font size = "3" color= "red">。每次訂購上限3人份 </font>
+  
+<img src="http://farm6.staticflickr.com/5518/11637697685_e8f8cd388b_o.png" width="1192" height="2280" alt="fruit pics"></a>
+
+
+<br>
+<br>
+
+
+<center>
+<div class="row-fluid">
+  
+  <div class="span3"  >
+    <center>
+    
+   <a href="http://www.chef29.com/users/sign_up" ><img src="http://farm8.staticflickr.com/7376/10865432235_c38d4c9a88_o.png" width="150" height="310" alt="jointoday"></a>
+
+  </center>
+</div> 
+
+  <div class="span3">
+    <center>
+ <a href="http://www.chef29.com/menu" ><img src="http://farm6.staticflickr.com/5542/10865422046_415fca3c0d_o.png" width="150" height="301" alt="Menu"></a> 
+</center>
+  </div> 
+
+
+  <div class="span3">
+  <center>
+<a href="http://www.chef29.com/how"><img src="http://farm8.staticflickr.com/7405/10866846856_8fc17bfde9_o.png" width="160" height="301" alt="howtobuy"></a>
+
+</center>
+  </div>
+
+   <div class="span3"><center>
+  <a href="http://www.chef29.com/orderlists/new" ><img src="http://farm6.staticflickr.com/5518/11040768243_3debf5b9f2_o.png" width="160" height="380" alt="kart"></a>
+</center>
+
+  </div>
+
+</div>
+
+</center>
+
+
+
+</body>
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+
+
+<script type="text/javascript">stLight.options({publisher: "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
+
+<script type="text/javascript">stLight.options({publisher: "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "3d6bd212-1a1c-4bf7-9f1c-7154d13f873d", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "googleplus", "pinterest", "baidu", "email", "blogger"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44036574-1', 'chef29.com');
+  ga('send', 'pageview');
+
+</script>
+</html>
+

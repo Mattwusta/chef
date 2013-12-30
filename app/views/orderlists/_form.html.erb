@@ -1,6 +1,12 @@
+
+<img src="http://farm4.staticflickr.com/3765/11112004814_5aeab96b1e_o.png" width="1447" height="800" alt="weekly">
+<hr>
+<img src="http://farm4.staticflickr.com/3739/11340104344_4b8e550e20_o.png" width="1348" height="446" alt="buy">
+
 <%= simple_form_for(@orderlist, html: { class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
-
+<br><br>
+<font color="gray" size ="5" face = "Baskerville Old Face" >最新餐點 12/29-1/3</font>
 <br><br>
 <font size = "3" color= "red">餐點每人份 ＄299 </font>
  
@@ -36,10 +42,7 @@
  </div>
 </center>
 
-
-
 <hr>
-
 
 
 <center>
@@ -70,13 +73,19 @@
  </div>
 </center>
 <hr>
-<img src="http://farm4.staticflickr.com/3765/11112004814_5aeab96b1e_o.png" width="1447" height="800" alt="weekly">
-<hr>
-<img src="http://farm4.staticflickr.com/3739/11340104344_4b8e550e20_o.png" width="1348" height="446" alt="buy">
+
+<font size = "3" color= "red"> 每週水果箱1人份 ＄299 </font>
+<br>
+<img src="http://farm4.staticflickr.com/3671/11637956434_73d22de577_o.png" width="1192" height="1262" alt="fruit box description"></a>
+
+
 
 <div class=" hero-unit">
 
-<font color="red" size ="4" face = "Baskerville Old Face">。每次需購買最少2份餐點 <br>
+<center><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">餐點訂購 (每份 ＄299）</font></center>
+<br><br>
+<font color="red" size ="3" face = "Baskerville Old Face">。每次需購買最少2份餐點
+<br>
 。可貨到付款 ＋ 運費自費（選貨到付款快遞加收＄30-$60）
 <br>
 。可先完成餐點付款 ＋ 運費
@@ -108,6 +117,25 @@
 ", rows: "2", :placeholder => "不可留空白" }%>
 
 <%= f.input :dish6, label: "6號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3", rows: "2", :placeholder => "不可留空白" }%>
+<hr>
+
+<center><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">一週水果箱訂購 （1週1人份＄299）</font></center>
+<br><br>
+<font color="red" size ="3" face = "Baskerville Old Face">。可只購買1人份水果箱，每週出貨上限為3人份（快遞箱子不夠大）。
+<br>
+。可貨到付款 ＋ 運費自費（選貨到付款快遞加收＄30-$60）
+<br>
+。可先完成水果箱子付款 ＋ 運費
+<br>
+。訂購截止之後請勿更改訂單內容(除填寫匯款資料外)
+<br>
+。可當禮盒送人，但需先完成水果箱付款＋運費。
+</font><br><br>
+
+<%= f.input :week, label: "單週水果箱 $299 (份量）", as: :integer, input_html: { :class => "span3
+", rows: "2", :placeholder => "不可留空白" }%>
+
+<%= f.input :month, label: "連續每週水果箱 | $299 + 運費 ", as: :integer, input_html: { :class => "span3", rows: "2", :placeholder => "(連續幾週）不可留空白" }%>
 
 <hr>
  <font size = "3" color= "red" face = "Baskerville Old Face">Gifts - 送禮請填入以下資料</font>
@@ -120,7 +148,7 @@
 <hr>
 <font size = "3" color= "red" face = "Baskerville Old Face">訂購截止之後請勿更改訂單細節(除填寫匯款資料外)</font>
 
- <%= f.input :time, label: "送餐日期(隔周星期2，3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 2，3，4或5 －早上：12點前/下午： 12-5點"} %> 
+ <%= f.input :time, label: "送餐日期(隔周星期，3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 2，3，4或5 －早上：12點前/下午： 12-5點"} %> 
 
  <%= f.input :reciever, label: "發票名稱", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "要/不用 - 若不用，發票也將捐出去"} %>
 
