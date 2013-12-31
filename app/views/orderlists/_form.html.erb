@@ -99,6 +99,8 @@
 
 <font size ="2" color = "gray">餐點數量可以輸入0，但請不要留白!</font><br>
 <font size ="2"><%= link_to '運費解說', delivery_path %></font><br>
+ <font size ="3"><%= link_to'您願意參加愛心鏈活動，多付一餐 ＄299 送給下個訂餐的客人當禮物嗎？-點入看更多', 'http://www.chef29.com/pins/420-starbucks-paying-it-forward'%></font>
+<br>
 <br>
 
 <%= f.input :dish1, label: "1號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3
@@ -130,9 +132,13 @@
 。新會員第一份餐點免費優惠訂購水果箱不可使用。
 <br>
 。可當禮盒送人，但需先完成水果箱付款＋運費。
-</font><br><br>
+</font><br>
+ <font size ="3"><%= link_to'您願意參加愛心鏈活動，多付一餐 ＄299 送給下個訂餐的客人當禮物嗎？-點入看更多', 'http://www.chef29.com/pins/420-starbucks-paying-it-forward'%></font>
+<br>
+<br>
 
-<%= f.input :week, label: "單週水果箱 $299 (份量）", as: :integer, input_html: { :class => "span3
+
+<%= f.input :week, label: "單次水果箱 $299 (份量）", as: :integer, input_html: { :class => "span3
 ", rows: "2", :placeholder => "不可留空白" }%>
 
 <%= f.input :month, label: "連續每週水果箱 （$299 X 幾週 + 運費 X 幾週)", as: :integer, input_html: { :class => "span3", rows: "2", :placeholder => "(連續幾週）不可留空白" }%>
@@ -151,6 +157,8 @@
  <%= f.input :time, label: "送餐日期(隔周星期，3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期 2，3，4或5 －早上：12點前/下午： 12-5點"} %> 
 
  <%= f.input :reciever, label: "發票名稱", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "要/不用 - 若不用，發票也將捐出去"} %>
+
+ <font size ="3"><%= link_to'您願意參加愛心鏈活動，多付一餐 ＄299 送給下個訂餐的客人當禮物嗎？-點入看更多', 'http://www.chef29.com/pins/420-starbucks-paying-it-forward'%></font>
 
  <%= f.input :detail, label: "備註 （您願意參加愛心鏈幫下位客人一份餐 ＄299 買單嗎？）", as: :text, input_html: { :class => "span5", rows: "3", :placeholder => "(我要參加 2014 愛心鏈） 若您有特別需求，如不吃什麼，團體訂購包裝需求(省運費），請在此填入。"} %>
  <hr>
