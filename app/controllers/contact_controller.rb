@@ -1,4 +1,5 @@
 class ContactController < ApplicationController
+    before_filter :authenticate_user!, except: [:contact]
 
   def new
     @message = Message.new
