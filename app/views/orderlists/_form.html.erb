@@ -6,7 +6,7 @@
 <%= simple_form_for(@orderlist, html: { class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
 <br><br>
-<font color="gray" size ="5" face = "Baskerville Old Face" >最新餐點1/19-24｜1/29 出貨（出貨1天）</font>
+<font color="gray" size ="5" face = "Baskerville Old Face" >最新餐點1/19-24｜1/29 出貨（星期三中午前）</font>
 <br><br>
 <font size = "3" color= "red">餐點每人份 ＄299 </font>
  
@@ -156,7 +156,7 @@
 <hr>
 <font size = "3" color= "red" face = "Baskerville Old Face">訂購截止之後請勿更改訂單細節(除填寫匯款資料外)</font>
 
- <%= f.input :time, label: "送餐(水果箱）日期(隔周星期3，4，5。中午過後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "星期3，4或5 －早上：12點前/下午：12-5點"} %> 
+ <%= f.input :time, label: "送餐(水果箱）日期(新年特殊：隔周星期3 早上）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "新年特殊：星期3－早上：12點前"} %> 
 
  <%= f.input :reciever, label: "發票", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "要/不用 - 若不用，發票也將捐出去"} %>
 
