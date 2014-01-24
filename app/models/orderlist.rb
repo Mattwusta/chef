@@ -3,6 +3,7 @@ class Orderlist < ActiveRecord::Base
  
 
   belongs_to :user
+  
   validates :time, presence: true
   validates :dish1, presence: true
   validates :dish2, presence: true
