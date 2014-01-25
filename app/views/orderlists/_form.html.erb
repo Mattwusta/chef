@@ -6,9 +6,9 @@
 <%= simple_form_for(@orderlist, html: { class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
 <br><br>
-<font color="gray" size ="5" face = "Baskerville Old Face" >最新餐點1/19-24｜1/29 出貨（星期三中午前）</font>
+<font color="gray" size ="5" face = "Baskerville Old Face" >最新餐點 1/26-2/6（開放訂購2禮拜） ｜ 出貨日期 2/12-14</font>
 <br><br>
-<font size = "3" color= "red">餐點每人份 ＄299 </font>
+<font size = "3" color= "red">餐點每人份 ＄299－＄499 </font>
  
 <br>  
 <br>
@@ -20,20 +20,20 @@
  <div class="row-fluid">
 
   <div class="span4" >
-    <a href="http://www.chef29.com/dish1" ><img src="http://farm6.staticflickr.com/5529/12005308344_c65de1029a_o.png" width="376" height="400" alt="1. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish1" ><img src="http://farm3.staticflickr.com/2843/12131642526_974b4d7097_o.png" width="376" height="400" alt="1. Week Nov 8th"></a>
 <br><br>
 
   </div>
 
   <div class="span4" >
-    <a href="http://www.chef29.com/dish2" ><img src="http://farm6.staticflickr.com/5528/12009440604_b9318e7a7d_o.png" width="377" height="400" alt="2. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish2" ><img src="http://farm3.staticflickr.com/2858/12131642486_df9bc9c003_o.png" width="377" height="400" alt="2. Week Nov 8th"></a>
 <br><br>
 
   </div>
 
   <div class="span4" >
 
-    <a href="http://www.chef29.com/dish3"><img src="http://farm4.staticflickr.com/3722/12005767246_c26076d961_o.png" width="377" height="400" alt="3. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish3"><img src="http://farm6.staticflickr.com/5510/12131642406_82c9869b53_o.png" width="377" height="400" alt="3. Week Nov 8th"></a>
 <br><br>
 
   </div>
@@ -47,20 +47,20 @@
  <div class="row-fluid">
 
   <div class="span4" >
-    <a href="http://www.chef29.com/dish4" ><img src="http://farm8.staticflickr.com/7350/12005767076_50d4e4005f_o.png" width="376" height="400" alt="1. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish4" ><img src="http://farm3.staticflickr.com/2845/12131385414_72549dcffc_o.png" width="376" height="400" alt="1. Week Nov 8th"></a>
 <br><br>
 
   </div>
 
   <div class="span4" >
-    <a href="http://www.chef29.com/dish5" ><img src="http://farm6.staticflickr.com/5515/12004954365_33116aaaeb_o.png" width="377" height="400" alt="2. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish5" ><img src="http://farm4.staticflickr.com/3736/12130973495_d08103aaba_o.png" width="377" height="400" alt="2. Week Nov 8th"></a>
 <br><br>
 
   </div>
 
   <div class="span4" >
 
-    <a href="http://www.chef29.com/dish6"><img src="http://farm6.staticflickr.com/5539/12004954065_dbc2ac6f97_o.png" width="377" height="400" alt="3. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish6"><img src="http://farm3.staticflickr.com/2862/12131254073_b088e47f73_o.png" width="377" height="400" alt="3. Week Nov 8th"></a>
 <br><br>
 
   </div>
@@ -82,7 +82,7 @@
 
 <div class=" hero-unit">
 
-<center><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">餐點訂購 (每份 ＄299）</font></center>
+<center><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">餐點訂購 (每份 ＄299 -$499）</font></center>
 <br><br>
 <font color="red" size ="3" face = "Baskerville Old Face">。每次需購買最少2份餐點（一周購買訂單算一次訂購）
 <br>
@@ -103,13 +103,13 @@
 <br>
 <br>
 
-<%= f.input :dish1, label: "1號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3
+<%= f.input :dish1, label: "1號餐點 $499 (份量）", as: :integer, input_html: { :class => "span3
 ", rows: "2", :placeholder => "不可留空白" }%>
 
-<%= f.input :dish2, label: "2號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3
+<%= f.input :dish2, label: "2號餐點 $499 (份量）", as: :integer, input_html: { :class => "span3
 ", rows: "2", :placeholder => "不可留空白" }%>
 
-<%= f.input :dish3, label: "3號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3
+<%= f.input :dish3, label: "3號餐點 $499 (份量）", as: :integer, input_html: { :class => "span3
 ", rows: "2", :placeholder => "不可留空白" }%>
 
 <%= f.input :dish4, label: "4號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3
