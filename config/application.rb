@@ -66,7 +66,7 @@ config.action_mailer.smtp_settings = {
   :port                 => 587,
   :domain               => "chef29.com",
   :user_name            => "chef29@chef29.com",
-  :password             => "mattapoet",
+  :password             => "mattenzo",
   :authentication       => :plain,
   :enable_starttls_auto => true
 }
