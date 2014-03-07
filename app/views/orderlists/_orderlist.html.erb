@@ -1,29 +1,30 @@
+
+
+
+
 <tr>
+<% if current_user == orderlist.user %>
 
 
+<td><%= orderlist.id %></td>
 
-	<td><%= orderlist.id %></td>
-
-	<td> <%= link_to orderlist.user.name, orderlist.user%></td>
-	<td> <%= orderlist.user.phone%></td>
-	<td> <%= orderlist.user.address %></td>
-	<td><%= orderlist.gift %></td>
-	<td><%= orderlist.address %></td>
-	<td><%= orderlist.dish1 %></td>
-	<td><%= orderlist.dish2 %></td>
-	<td><%= orderlist.dish3 %></td>
-	<td><%= orderlist.dish4 %></td>
-	<td><%= orderlist.dish5 %></td>
-	<td><%= orderlist.dish6 %></td>
-	<td><%= orderlist.week %></td>
-	<td><%= orderlist.month %></td>
-	<td><%= link_to '查看', orderlist %></td>
-	<td><%= link_to '取消', alert_path %></td>
-	<td><%= orderlist.paylater %></td>
-	<td><%= orderlist.time %></td>
-	<td><%= orderlist.reciever %></td>
-	
-	
-	
- 
+<td> <%= link_to orderlist.user.name, orderlist.user%></td>
+<td> <%= orderlist.user.phone%></td>
+<td> <%= orderlist.user.address %></td>
+<td><%= orderlist.gift %></td>
+<td><%= orderlist.address %></td>
+<td><%= orderlist.dish1 %></td>
+<td><%= orderlist.dish2 %></td>
+<td><%= orderlist.dish3 %></td>
+<td><%= orderlist.dish4 %></td>
+<td><%= orderlist.dish5 %></td>
+<td><%= orderlist.dish6 %></td>
+<td><%= orderlist.week %></td>
+<td><%= orderlist.month %></td>
+<td><%= link_to '查看', orderlist %></td>
+<td><%= link_to '取消', alert_path %></td>
+<td><%= orderlist.paylater %></td>
+<td><%= orderlist.time %></td>
+<% else %>
+<% end %>   
 </tr>
