@@ -1,12 +1,12 @@
 <tr>
-<% if current_user == orderlist.user %>
+
 
 
 	<td><%= orderlist.id %></td>
 
 	<td> <%= link_to orderlist.user.name, orderlist.user%></td>
-	<td> <%= link_to orderlist.user.phone, orderlist.user%></td>
-	<td> <%= link_to orderlist.user.address, orderlist.user%></td>
+	<td> <%= orderlist.user.phone%></td>
+	<td> <%= orderlist.user.address %></td>
 	<td><%= orderlist.gift %></td>
 	<td><%= orderlist.address %></td>
 	<td><%= orderlist.dish1 %></td>
@@ -17,8 +17,6 @@
 	<td><%= orderlist.dish6 %></td>
 	<td><%= orderlist.week %></td>
 	<td><%= orderlist.month %></td>
-
-
 	<td><%= link_to '查看', orderlist %></td>
 	<td><%= link_to '取消', alert_path %></td>
 	<td><%= orderlist.paylater %></td>
@@ -26,6 +24,5 @@
 	
 	
 	
-<% else %>
-<% end %>   
+ 
 </tr>
