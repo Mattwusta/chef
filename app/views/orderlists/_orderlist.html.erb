@@ -3,13 +3,28 @@
 
 
 	<td><%= orderlist.id %></td>
-	<td> <%= orderlist.created_at %></td>
+
 	<td> <%= link_to orderlist.user.name, orderlist.user%></td>
-	<td> <%= link_to orderlist.user.email, orderlist.user%></td>
-	<td><%= link_to '訂單細節', orderlist %></td>
-	<td><%= link_to '取消訂單', alert_path %></td>
-	<td><%= orderlist.re %></td>
+	<td> <%= link_to orderlist.user.phone, orderlist.user%></td>
+	<td> <%= link_to orderlist.user.address, orderlist.user%></td>
+	<td><%= orderlist.gift %></td>
+	<td><%= orderlist.address %></td>
+	<td><%= orderlist.dish1 %></td>
+	<td><%= orderlist.dish2 %></td>
+	<td><%= orderlist.dish3 %></td>
+	<td><%= orderlist.dish4 %></td>
+	<td><%= orderlist.dish5 %></td>
+	<td><%= orderlist.dish6 %></td>
+	<td><%= orderlist.week %></td>
+	<td><%= orderlist.month %></td>
+
+
+	<td><%= link_to '查看', orderlist %></td>
+	<td><%= link_to '取消', alert_path %></td>
 	<td><%= orderlist.paylater %></td>
+	<td><%= orderlist.time %></td>
+	
+	
 	
 <% else %>
 <% end %>   
