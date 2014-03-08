@@ -15,9 +15,9 @@
 <%= simple_form_for(@orderlist, html: { class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
 <br><br>
-<font color="gray" size ="5" face = "Baskerville Old Face" >最新餐點3/2-7，出貨日期 3/12-14</font>
+<font color="gray" size ="5" face = "Baskerville Old Face" >最新餐點3/9-14，出貨日期3/19-2</font>
 <br><br>
-<font size = "3" color= "red">餐點每人份 ＄299 </font>
+<font size = "3" color= "red">餐點每份 ＄299 </font>
  
 <br>  
 <br>
@@ -29,20 +29,20 @@
  <div class="row-fluid">
 
   <div class="span4" >
-    <a href="http://www.chef29.com/dish1" ><img src="http://farm4.staticflickr.com/3755/12845862505_597df41e89_o.png" width="376" height="400" alt="1. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish1" ><img src="http://farm3.staticflickr.com/2098/13002302483_f7a57dff40_o.png" width="376" height="400" alt="1. Week Nov 8th"></a>
 <br><br>
 
   </div>
 
   <div class="span4" >
-    <a href="http://www.chef29.com/dish2" ><img src="http://farm4.staticflickr.com/3816/12854403244_d2b1982ddb_o.png" width="377" height="400" alt="2. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish2" ><img src="http://farm4.staticflickr.com/3702/13002159895_b98f19a986_o.png" width="377" height="400" alt="2. Week Nov 8th"></a>
 <br><br>
 
   </div>
 
   <div class="span4" >
 
-    <a href="http://www.chef29.com/dish3"><img src="http://farm4.staticflickr.com/3730/12853988535_aebf4d74f3_o.png" width="377" height="400" alt="3. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish3"><img src="http://farm8.staticflickr.com/7304/13002302103_7a81228b9e_o.png" width="377" height="400" alt="3. Week Nov 8th"></a>
 <br><br>
 
   </div>
@@ -56,20 +56,20 @@
  <div class="row-fluid">
 
   <div class="span4" >
-    <a href="http://www.chef29.com/dish4" ><img src="http://farm8.staticflickr.com/7394/12846278894_7614855ee1_o.png" width="376" height="400" alt="1. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish4" ><img src="http://farm4.staticflickr.com/3563/13002301963_6f7d158cd6_o.png" width="376" height="400" alt="1. Week Nov 8th"></a>
 <br><br>
 
   </div>
 
   <div class="span4" >
-    <a href="http://www.chef29.com/dish5" ><img src="http://farm8.staticflickr.com/7303/12846278784_01ecfe8732_o.png" width="377" height="400" alt="2. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish5" ><img src="http://farm8.staticflickr.com/7410/13002159335_f44b7250d6_o.png" width="377" height="400" alt="2. Week Nov 8th"></a>
 <br><br>
 
   </div>
 
   <div class="span4" >
 
-    <a href="http://www.chef29.com/dish6"><img src="http://farm3.staticflickr.com/2874/12845947213_ca9bfcb2a7_o.png" width="377" height="400" alt="3. Week Nov 8th"></a>
+    <a href="http://www.chef29.com/dish6"><img src="http://farm4.staticflickr.com/3164/13002301393_f10132cf85_o.png" width="377" height="400" alt="3. Week Nov 8th"></a>
 <br><br>
 
   </div>
@@ -77,9 +77,6 @@
  </div>
 </center>
 
-
- </div>
-</center>
 <hr>
 
 <font size = "3" color= "red"> 一週水果箱1人份 ＄299 </font>
@@ -157,7 +154,7 @@
  <font size = "3" color= "red" face = "Baskerville Old Face">Gifts - 送禮請填入以下資料</font>
  <%= f.input :gift, label: "收禮人－送禮需先完成水果箱付款＋運費。", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "張小白"} %>
  <hr>
-
+ <font size = "3" color= "red" face = "Baskerville Old Face">送禮或是要將餐點送到別的地址才需要填入</font>
 <%= f.input :phone, label: "收餐點(水果箱）聯絡電話", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "與註冊時電話不同在填入（0988888888）"} %>
  
  <%= f.input :address, label: "新指定收餐(水果箱）點地址", as: :text, input_html: { :class => "span4", rows: "2", :placeholder => "與註冊時地址不同在填入（106台北市金山南路1段10號5樓...）"} %>
