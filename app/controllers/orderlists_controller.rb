@@ -15,7 +15,7 @@ class OrderlistsController < ApplicationController
   def manage
    
     @orderlists = Orderlist.all
-    @allorders = Orderlist.order("created_at desc")
+    @allorders = Orderlist.order
 
     respond_to do |format|
       format.html # index.html.erb
