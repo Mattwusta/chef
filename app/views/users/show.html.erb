@@ -26,23 +26,10 @@
    <div class="span10">
    <font color="gray"  size="5"><b><%= @user.name %></b></font><br>
    <br>
-   <% if @user.intro.present? %>
+   
    <font color="gray" size="3"><i> <%= simple_format@user.intro %></i></font><br>
   
-   <% if @user.phone.present? %>
-   <font color="gray" size="2"><b>地址:</b> <%= @user.address %></font><br>
 
-   <% else %>
-   <% end %>
-   
-   <% if @user.phone.present? %>
-   <font color="gray" size="2"><b>電話: </b> <%= @user.phone %></font><br>
-   <% else %>
-   <% end %>
-   <% else %>
-   <br><br>
-   <font color="#5CA5FF" size="4" color><i> “您可以在右上角選單個人 > 編輯資料裡填入自我/店家介紹，地址，電話等資訊。”</i></font>
-<% end %>
 
     </div>
   </div>
