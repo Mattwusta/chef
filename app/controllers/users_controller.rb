@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 before_filter :authenticate_user!, except: [:show]
-http_basic_authenticate_with name: "manage", password: "steviematt", except: [:show]
+http_basic_authenticate_with name: "admin", password: "mattenzo", except: [:show]
 
 
 def index

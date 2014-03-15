@@ -1,6 +1,6 @@
 class PinsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
-  http_basic_authenticate_with name: "manage", password: "steviematt", except: [:index, :show]
+  http_basic_authenticate_with name: "admin", password: "mattenzo", except: [:index, :show]
   before_filter :prepare_categories
   
   require  'will_paginate/array'

@@ -1,6 +1,6 @@
 class OrderlistsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show, :manage]
-  http_basic_authenticate_with name: "manage", password: "steviematt", except: [:index, :show, :new, :edit, :create, :update, :destroy ]
+  http_basic_authenticate_with name: "admin", password: "mattenzo", except: [:index, :show, :new, :edit, :create, :update, :destroy ]
   # GET /orderlists
   # GET /orderlists.json
   def index
