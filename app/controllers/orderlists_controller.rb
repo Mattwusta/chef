@@ -11,6 +11,7 @@ class OrderlistsController < ApplicationController
       format.json { render json: @orderlists }
     end
   end
+  
 
   def manage
    
