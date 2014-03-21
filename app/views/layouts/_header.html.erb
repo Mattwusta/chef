@@ -73,15 +73,13 @@
    <li><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
   </ul>
 
-                                                                                    
-<li> <form action="/pins" class="navbar-search pull-left"  method= "get"><input id="search" type="text" name="search" class="search-query" placeholder="搜尋"></form></li>
+                                                                                  
 
 <% else %>
   <ul class="nav pull-right">
     <li><%= link_to '訂閱',  'https://tinyletter.com/Chef29' %></li>
     <li><%= link_to '登入',  new_user_session_path %></li>
-    <li><form action="/pins" calss="navbar-search pull-left" style="padding:5px;"  method= "get">
-    <input id="search" type="text" name="search" class="search-query" placeholder="search"></form></li>
+    <li><%= link_to '《 註冊 》',  'http://www.chef29.com/users/sign_up'%></li>
   </ul>
 
 <% end %>
