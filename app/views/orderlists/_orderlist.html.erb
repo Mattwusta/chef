@@ -1,5 +1,5 @@
 <tr>
-
+<% if current_user == orderlist.user %>
 
 
 <td><%= orderlist.id %></td>
@@ -23,6 +23,6 @@
 <td><%= orderlist.time %></td>
 
 
-
- 
+<% else %>
+<% end %>   
 </tr>
