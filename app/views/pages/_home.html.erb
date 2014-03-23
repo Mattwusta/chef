@@ -43,6 +43,13 @@
  
 <div class="page-header">
  <font color="gray" size ="6" face = "Baskerville Old Face">Chef29至今已捐出<font color="#5CA5FF" size ="8" face = "Baskerville Old Face"> 2000 </font>多份餐點</font>
+ <% if user_signed_in? %>
+
+<% else %>
+          <font color = "white" style="padding-left:60px;" > <%= link_to '註冊', new_user_registration_path, class: "btn btn-large
+   btn-primary" %></font>
+
+<% end %>
 <% end %>
 
         </font>
