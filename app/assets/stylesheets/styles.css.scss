@@ -95,6 +95,34 @@ color: gray;
 }
 
 
+
+.flex-vimeo1 {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 100%;
+  height: 10px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-vimeo1.widescreen { padding-bottom: 45.25%; }
+.flex-vimeo1.vimeo { padding-top: 10%; }
+ 
+.flex-vimeo1 iframe,
+.flex-vimeo1 object,
+.flex-vimeo1 embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 86.5%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 400px), only screen and (device-width: 400px) and (device-height: 270px), only screen and (width: 400px) and (orientation: landscape), only screen and (device-width: 400px), only screen and (max-width: 400px) {
+  .flex-video { padding-top: 0; }
+}
+
+
+
 .flex-instagram {
   position: relative;
   padding-top: 0px;
