@@ -9,6 +9,7 @@
              
 <%= link_to "Chef29 今晚大廚", root_path, class: "brand" %>
 
+
 <div class="nav-collapse">
   <ul class="nav">
    <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#" face = "Baskerville Old Face">了解更多</a>
@@ -27,30 +28,30 @@
     <div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">菜單上</a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-   <li><%= link_to "我們的服務", know_path %></li>
-   <li><%= link_to "為什麼 Chef29 ", why_path %></li>
- 
-   <hr>
+   <font color="#5CA5FF" size ="3" face = "Baskerville Old Face">《餐點教學》</font>
+   <br><br>
+
    <li><%= link_to "線上餐點", menu_path %></li>
-   <li><%= link_to "未來餐點", 'http://www.chef29.com/categories/4' %></li>
    <li><%= link_to "過去餐點", 'http://www.chef29.com/categories/1' %></li>
+   <li><%= link_to "餐點教學說明", know_path %></li>
+   <li><%= link_to "為什麼 ?？", why_path %></li>
    <hr>
+     <font color="#5CA5FF" size ="3" face = "Baskerville Old Face">《一周水果箱》</font>
+   <br><br>
    <li><%= link_to "一周水果箱", fruit_path %></li>
-   
-   </Ul>
-
-
-   <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">如何購買</a>
-
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-   <li><%= link_to "訂購教學", how_path %></li>
+   <hr>
+    <font color="#5CA5FF" size ="3" face = "Baskerville Old Face">《訂購教學》</font>
+       <br><br>
+  <li><%= link_to "訂購教學", how_path %></li>
    <li><%= link_to "運費細節", delivery_path %></li>
    <li><%= link_to "取消訂單", orderlists_path %></li>
    <li><%= link_to "退貨政策", return_path %></li>
    <li><%= link_to "付款帳號", account_path %></li>
    
-   </Ul>
- <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">做好事</a>
+   </ul>
+<br><br>
+
+ <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#"><font color="#5CA5FF" size ="3" >做好事 | DO GOOD</font></a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
    <li><%= link_to "買1餐，給1餐", give_path %></li>
@@ -80,6 +81,7 @@
   <ul class="nav pull-right">
     <li><%= link_to '訂閱',  'https://tinyletter.com/Chef29' %></li>
     <li><%= link_to '登入',  new_user_session_path %></li>
+
     <li><%= link_to '註冊',  new_user_registration_path %></li>
     
     <li><form action="/pins" calss="navbar-search pull-left" style="padding:5px;"  method= "get"><input id="search" type="text" name="search" class="search-query" placeholder="search"></form></li>
