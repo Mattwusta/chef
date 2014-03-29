@@ -48,7 +48,6 @@ Dine::Application.routes.draw do
   get 'hoc' => 'pages#hoc'
  
 
-
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
 
