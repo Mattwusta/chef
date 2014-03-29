@@ -45,8 +45,9 @@ Dine::Application.routes.draw do
   get 'line' => 'pages#line'
   get 'side' => 'pages#side'
   get 'fruit' => 'pages#fruit'
-  get 'learnvideos' => 'pages#learnvideos'
+  get 'hoc' => 'pages#hoc'
  
+
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post

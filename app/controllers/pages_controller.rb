@@ -44,7 +44,7 @@ end
 def hunger
 end
 
-def learnvideos
+def hoc
 end
 
 def dogood
