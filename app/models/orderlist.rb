@@ -11,8 +11,7 @@ class Orderlist < ActiveRecord::Base
   validates :dish4, presence: true
   validates :dish5, presence: true
   validates :dish6, presence: true  
-  validates :week, presence: true
-  validates :month, presence: true 
+
   
 end 
 
