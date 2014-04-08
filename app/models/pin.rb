@@ -10,9 +10,9 @@ attr_accessible :id, :description, :image, :image_remote_url, :name, :Delivery, 
   validates :image, presence: true
   validates :description, presence: true
   validates :name, presence: true
-  has_attached_file :image, styles: { medium: "800x300>"}
+  has_attached_file :image, styles: { large: "1200x600>"}
   validates_attachment :image, content_type: { content_type: ['image/jpeg', 'image/jpg', 'image/png', 'image/gif'] },
-  size: { less_than: 2.megabytes }
+  size: { less_than: 3.megabytes }
   
 belongs_to :user
 belongs_to :category
