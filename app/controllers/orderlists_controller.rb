@@ -12,7 +12,6 @@ class OrderlistsController < ApplicationController
     end
   end
   
-
   def manage
    
     @orderlists = Orderlist.all
