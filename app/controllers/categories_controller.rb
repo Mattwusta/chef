@@ -86,3 +86,8 @@ class CategoriesController < ApplicationController
     end
   end
 end
+
+
+def pin_params
+   params.require(:user).permit(:description, :image)
+end
