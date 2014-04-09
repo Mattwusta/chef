@@ -1,15 +1,14 @@
 class PinsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
-  http_basic_authenticate_with name: "admin", password: "mattenzo", except: [:index, :show]
-  before_filter :prepare_categories
-  
+
   require  'will_paginate/array'
+
 
   # GET /pins
   # GET /pins.json
   def index
      @pins = Pin.search(params[:search])
-     @pins = @pins.paginate(:page => params[:page], :per_page => 15)
+     @pins = @pins.paginate(:page => params[:page], :per_page => 60)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -22,6 +21,7 @@ class PinsController < ApplicationController
   # GET /pins/1.json
   def show
     @pin = Pin.find(params[:id])
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @pin }
@@ -90,13 +90,6 @@ end
 def pin_params
    params.require(:pin).permit(:description, :image, :name)
 end
-
-   private
-    def prepare_categories
-      @categories = Category.all
-    end
- 
-
 
 
 
