@@ -2,7 +2,7 @@
 <% if current_user == orderlist.user %>
 
 
-<td><%= orderlist.id %></td>
+
 
 <td> <%= link_to orderlist.user.name, orderlist.user%></td>
 <td> <%= orderlist.user.phone%></td>
@@ -23,6 +23,5 @@
 <td><%= orderlist.time %></td>
 
 
-<% else %>
-<% end %>   
+ 
 </tr>
