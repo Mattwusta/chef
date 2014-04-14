@@ -1,9 +1,4 @@
-<center>
 
-<iframe src="//player.vimeo.com/video/81164840?byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-</center>
-<hr>
 
 <img src="http://farm4.staticflickr.com/3765/11112004814_5aeab96b1e_o.png" width="1447" height="800" alt="weekly">
 <hr>
@@ -96,8 +91,75 @@
 
 
 <font size ="2" color = "gray">餐點數量可以輸入0，但請不要留白!</font><br>
-<font size ="2"><%= link_to '運費解說', delivery_path %></font><br>
- <font size ="3"><%= link_to'您願意參加愛心鏈活動，多付一餐 ＄299 送給下個訂餐的客人當禮物嗎？-點入看更多', 'http://www.chef29.com/pins/420-starbucks-paying-it-forward'%></font>
+
+
+
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#video">訂購教學影片</button>
+
+<div id="video" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">1分鐘完成訂購！</h4>
+  </div>
+
+  <div class="modal-body">
+   <center>
+
+<iframe src="//player.vimeo.com/video/81164840?byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+</center>
+  </div>
+</div>
+
+
+
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#responsive">運費解說</button>
+
+<div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">運費解說</h4>
+  </div>
+
+  <div class="modal-body">
+    <img src="http://farm3.staticflickr.com/2133/13097695584_ec8d0abe47_o.png" width="1400" height="1102" alt="delivery1">
+  </div>
+</div>
+
+
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#pf">想參加愛心串聯？</button>
+
+<div id="pf" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="pf-title">愛心串聯活動解說</h4>
+  </div>
+
+  <div class="modal-body">
+<center>
+<iframe width="560" height="315" src="//www.youtube.com/embed/W27JLC1Yg2Q" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+
+ <img src="https://farm8.staticflickr.com/7148/13844724645_cf5aaa682d_o.png" width="1400" height="1102" alt="1">
+
+
+
+ <img src=" https://farm8.staticflickr.com/7163/13845091534_52546697d3_o.png" width="1400" height="1102" alt="1">
+
+ <br><br><br>
+
+ <%= link_to "《看現在已經串聯多少人》", 'http://www.chef29.com/pins/420-starbucks-paying-it-forward' %>
+  
+  </center>
+
+
+
+  </div>
+
+</div>
+
 <br>
 <br>
 
@@ -140,8 +202,27 @@
  <hr>
   <%= f.input :discount, label: "免費餐點禮卷密碼", as: :text, input_html: { :class => "span5", rows: "2", :placeholder => "若有免費餐點密碼請在此輸入，付款時請扣除＄299. 與會員第一份餐點免費需要分開用，輸入錯誤密碼不出貨。"} %>
  <hr>
-  <font size = "3" color= "red" face = "Baskerville Old Face">貨到付款／轉賬： 請看<%= link_to '（運費）', delivery_path %><br> </font>
+  <font size = "3" color= "red" face = "Baskerville Old Face">貨到付款／轉賬<br> </font>
   <%= f.input :paylater, label: "付款方式", as: :text, input_html: { :class => "span3", rows: "2", :placeholder => "請填入： 貨到付款/轉賬＋運費"} %>
+
+
+  <button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#responsive">運費解說</button>
+
+<div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">運費解說</h4>
+  </div>
+
+  <div class="modal-body">
+    <img src="http://farm3.staticflickr.com/2133/13097695584_ec8d0abe47_o.png" width="1400" height="1102" alt="delivery1">
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-default">關閉</button>
+
+  </div>
+</div>
 <hr>
   <font size = "3" color= "red" face = "Baskerville Old Face"> 以下完成餐點(水果箱）付款 ＋運費後再回來填入（查看訂單 > 訂單細節 > 修改訂單)</font>
   <br><br>
