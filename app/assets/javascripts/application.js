@@ -17,6 +17,7 @@
 //= require_tree .
 
 $('.dropdown-toggle').dropdown()
+//= require bootstrap-modal
 
 
 
