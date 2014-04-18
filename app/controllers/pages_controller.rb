@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-	http_basic_authenticate_with name: "admin", password: "mattenzo", except: [:chef29tv, :hocv, :chefs, :goodcompany, :hoc, :home, :learnvideos, :fruit, :dish4, :dish5, :dish6, :about, :side, :line, :help, :dogood, :lovemeal, :doogood, :hunger,:delivery, :donations, :_home, :faq, :account, :return, :dish1, :dish2, :dish3, :give, :how, :know, :list, :menu, :privacy, :search, :service, :shop, :why, :cancel]
+	http_basic_authenticate_with name: "admin", password: "mattenzo", except: [:makemoney, :chef29tv, :hocv, :chefs, :goodcompany, :hoc, :home, :learnvideos, :fruit, :dish4, :dish5, :dish6, :about, :side, :line, :help, :dogood, :lovemeal, :doogood, :hunger,:delivery, :donations, :_home, :faq, :account, :return, :dish1, :dish2, :dish3, :give, :how, :know, :list, :menu, :privacy, :search, :service, :shop, :why, :cancel]
 
 def home
 end
@@ -107,6 +107,10 @@ def hoc
 end 
 
 def chef29tv
+end 
+
+
+def makemoney
 end 
 
 end

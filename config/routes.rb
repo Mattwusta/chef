@@ -50,6 +50,7 @@ Dine::Application.routes.draw do
   get 'goodcompany' => 'pages#goodcompany'
   get 'hoc' => 'pages#hoc'
   get 'chef29tv' => 'pages#chef29tv'
+  get 'makemoney' => 'pages#makemoney'
  
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
