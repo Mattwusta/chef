@@ -51,6 +51,7 @@ Dine::Application.routes.draw do
   get 'hoc' => 'pages#hoc'
   get 'chef29tv' => 'pages#chef29tv'
   get 'makemoney' => 'pages#makemoney'
+  get 'orderpage' => 'pages#orderpage'
  
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
