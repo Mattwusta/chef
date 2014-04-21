@@ -21,43 +21,55 @@
    <li><%= link_to "Do Good | 做好事", 'http://www.chef29.com/categories/5' %></li>
    <li><%= link_to "Chef29 TV | 影音頻道", chef29tv_path %></li>
    <li><%= link_to "Chef29 @Pintrest ", 'http://www.pinterest.com/chef29com/boards/' %></li>
-   <li><%= link_to "Chef29 @Instagram", 'http://instagram.com/chef29com' %></li>
+   <li><%= link_to "Chef29 @Instagram", 'http://instagram.com/chef29com' %>
+  </li>
    </ul>
    <li>
 
 
-    <div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">菜單上</a>
+  <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">菜單上</a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-   <font color="#5CA5FF" size ="3" face = "Baskerville Old Face">《餐點教學》</font>
-   <br><br>
 
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="#">餐點教學</a>
+
+
+   <ul class="dropdown-menu">
    <li><%= link_to "線上餐點", menu_path %></li>
    <li><%= link_to "影音料理教學 - 需密碼", hocv_path %></li>
    <li><%= link_to "過去餐點", 'http://www.chef29.com/categories/1' %></li>
-   <li><%= link_to "餐點教學說明", know_path %></li>
+   <li><%= link_to "說明", know_path %></li>
    <li><%= link_to "為什麼 ?？", why_path %></li>
    
    <hr>
+
     <font color="#5CA5FF" size ="3" face = "Baskerville Old Face">《訂購教學》</font>
        <br><br>
-  <li><%= link_to "訂購教學", how_path %></li>
+   <li><%= link_to "訂購教學", how_path %></li>
    <li><%= link_to "運費細節", delivery_path %></li>
    <li><%= link_to "取消訂單", orderlists_path %></li>
    <li><%= link_to "退貨政策", return_path %></li>
-   <li><%= link_to "付款帳號", account_path %></li>
    
    </ul>
+ <hr>
+    <li><%= link_to "付款帳號", account_path %></li>
+      </ul>
+
+
+
 <br><br>
 
 <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#" face = "Baskerville Old Face">我們的故事</a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" >
-   <li><%= link_to "關於 Chef29", about_path %></li>
+  
+  <li><%= link_to "關於 Chef29", about_path %></li>
   <li><%= link_to "Chef29 主廚團隊", chefs_path %></li>
-   <li><%= link_to "好公司", goodcompany_path %></li>
-   </ul>
-   <li>
+  <li><%= link_to "好公司", goodcompany_path %></li>
+  
+  </ul>
+
 <br><br>
  
 
