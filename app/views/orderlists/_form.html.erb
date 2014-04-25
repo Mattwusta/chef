@@ -115,8 +115,6 @@
 </center>
 
 
-
-
 <hr>
 
 <center>
@@ -210,6 +208,33 @@
  </div>
 </center>
 
+<br>
+<hr>
+<br><br>
+
+<img src="https://farm8.staticflickr.com/7072/14001023722_fb33f1ae19_o.jpg" height="1262" alt="fruit box description"></a>
+<br><br><br>
+
+
+<img src="https://farm8.staticflickr.com/7024/14004105925_a4c1b69336_b.jpg" width="1400" height="200" alt="1. Week Nov 8th" href="#fruit" data-toggle="modal">
+
+
+<div id="fruit" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">水果箱 《如何訂購》</h4>
+  </div>
+
+  <div class="modal-body">
+   <center>
+<br><br>
+<img src="https://farm3.staticflickr.com/2924/14004410054_ea00bab170_o.jpg" width="1168" height="912" alt="1 nov 8th full">
+</center>
+  </div>
+</div>
+<br><br>
+</div>
+<br><br>
 
 
 <div class=" hero-unit">
@@ -330,6 +355,34 @@
 ", rows: "2", :placeholder => "不訂購請輸入0" }%>
 
 <%= f.input :dish6, label: "6號餐點 $299 (份量）", as: :integer, input_html: { :class => "span3", rows: "2", :placeholder => "不訂購請輸入0" }%>
+<hr>
+
+<center><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">一週水果箱訂購 （1週1人份＄399）</font></center>
+
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#fruit1">水果箱訂購限制</button>
+
+<br>
+
+<div id="fruit1" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">水果箱訂購限制</h4>
+  </div>
+
+  <div class="modal-body">
+   <center>
+
+<img src="https://farm8.staticflickr.com/7450/14024594413_971dae82a6_o.png" width="1168" height="912" alt="1 nov 8th full">
+</center>
+  </div>
+</div>
+<br>
+
+
+<%= f.input :week, label: "一周水果箱 $399 (份量）", as: :integer, input_html: { :class => "span3
+", rows: "2", :placeholder => "不訂購請輸入0" }%>
+
+<%= f.input :month, label: "連續每週水果箱 （$399 X 幾週 + 運費 X 幾週)", as: :integer, input_html: { :class => "span3", rows: "2", :placeholder => "(連續幾週）不訂購請輸入0" }%>
 
 
 <hr>
