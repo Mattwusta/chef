@@ -52,7 +52,7 @@ Dine::Application.routes.draw do
   get 'chef29tv' => 'pages#chef29tv'
   get 'makemoney' => 'pages#makemoney'
   get 'orderpage' => 'pages#orderpage'
- 
+   get 'pickup' => 'pages#pickup'
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
