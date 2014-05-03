@@ -2069,3 +2069,21 @@
 [05/02/14 10:25:48 +0800 Mattbookteki-MacBook-Pro.local (955)] INFO : Installing Rails3 Error instrumentation
 [05/02/14 10:25:48 +0800 Mattbookteki-MacBook-Pro.local (955)] INFO : Finished instrumentation
 [05/02/14 10:25:49 +0800 Mattbookteki-MacBook-Pro.local (955)] INFO : Doing deferred dependency-detection before Rack startup
+[05/03/14 09:05:43 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Starting the New Relic agent in "development" environment.
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Reading configuration from config/newrelic.yml
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Enabling the Request Sampler.
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Enabling the Request Sampler.
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Environment: development
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Dispatcher: webrick
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Application: development
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Installing ActiveRecord instrumentation
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Installing Net instrumentation
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Installing deferred Rack instrumentation
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Installing Rails 3 Controller instrumentation
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Installing Rails3 Error instrumentation
+[05/03/14 09:05:44 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Finished instrumentation
+[05/03/14 09:05:45 +0800 Mattbookteki-MacBook-Pro.local (1307)] INFO : Doing deferred dependency-detection before Rack startup
