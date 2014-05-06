@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140409080340) do
+ActiveRecord::Schema.define(:version => 20140506035012) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(:version => 20140409080340) do
 
   create_table "orderlists", :force => true do |t|
     t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
     t.integer  "user_id"
     t.integer  "dish1"
     t.integer  "dish2"
@@ -50,8 +50,12 @@ ActiveRecord::Schema.define(:version => 20140409080340) do
     t.integer  "dish6"
     t.integer  "week"
     t.integer  "month"
+    t.string   "pickuplocation"
+    t.string   "pickupdates"
   end
 
+  add_index "orderlists", ["pickupdates"], :name => "index_orderlists_on_pickupdates"
+  add_index "orderlists", ["pickuplocation"], :name => "index_orderlists_on_pickuplocation"
   add_index "orderlists", ["user_id"], :name => "index_orderlists_on_user_id"
 
   create_table "pins", :force => true do |t|
@@ -108,9 +112,11 @@ ActiveRecord::Schema.define(:version => 20140409080340) do
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
     t.datetime "confirmed_at"
+    t.string   "pickupdate"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["pickupdate"], :name => "index_users_on_pickupdate"
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end

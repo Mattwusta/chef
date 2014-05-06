@@ -366,6 +366,7 @@
 
 <hr>
 
+
  <img src="https://farm8.staticflickr.com/7148/13844724645_cf5aaa682d_o.png" width="1400" height="1102" alt="1">
 
 
@@ -377,9 +378,6 @@
  <%= link_to "《看現在已經串聯多少人》", 'http://www.chef29.com/pins/420-starbucks-paying-it-forward' %>
   
   </center>
-
-
-
   </div>
 
 </div>
@@ -463,8 +461,6 @@
 
         <img src="https://farm3.staticflickr.com/2928/14058967924_f367775517_o.png" width="1400" height="1102" alt="delivery1">  
 
-        
-
         <img src="https://farm4.staticflickr.com/3755/13909841784_52e1d91b39_b.jpg" width="1400" height="1102" alt="delivery1">  
 
 
@@ -490,9 +486,81 @@
  
  <%= f.input :address, label: "新指定收餐(水果箱）點地址", as: :text, input_html: { :class => "span4", rows: "2", :placeholder => "與註冊時地址不同在填入（106台北市金山南路1段10號5樓...）"} %>
 <hr>
+<center><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">宅配送貨</font></center>
 <font size = "3" color= "red" face = "Baskerville Old Face">訂購截止之後請勿更改訂單細節(除填寫匯款資料外)</font>
+<br>
+
 
  <%= f.input :time, label: "送餐點，水果箱日期時間(隔周星期3，4，5 午後）", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "請填入收貨日期"} %> 
+
+ <hr>
+
+ <center><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">Chef29 取貨點 取貨</font></center>
+
+ <button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#pickuplocation">取貨點說明</button>
+
+
+
+<div id="pickuplocation" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">取貨點說明</h4>
+  </div>
+
+  <div class="modal-body">
+   <center>
+
+        <img src="https://farm3.staticflickr.com/2918/14116204491_3a54ce24db_b.jpg" width="1400" height="1102" alt="delivery1">  
+
+        <img src="https://farm3.staticflickr.com/2938/13932877408_c29d74a89a_o.png" width="500" height="1102" alt="delivery1">  
+
+<hr>
+
+        <img src="https://farm8.staticflickr.com/7372/13932845489_ddf6b8ccb6_o.png" width="500" height="1102" alt="delivery1"> 
+
+        <img src="https://farm6.staticflickr.com/5315/14106062803_297e4e57f4_o.jpg" width="500" height="1102" alt="delivery1">  
+
+        <img src="https://farm8.staticflickr.com/7039/14116446992_90a5802bb3_o.png" width="400" height="1102" alt="delivery1">  
+
+<hr>
+
+        <img src="https://farm6.staticflickr.com/5480/13932554930_31090f6ae1_o.jpg" width="1400" height="1102" alt="delivery1">  
+
+
+</center>
+  </div>
+</div>
+
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#pickupvideo">取貨點教學影片</button>
+
+
+
+<div id="pickupvideo" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">取貨點影片教學</h4>
+  </div>
+
+  <div class="modal-body">
+   <center>
+<br>
+
+<iframe src="//player.vimeo.com/video/94121987?byline=0" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+</center>
+  </div>
+</div>
+
+<br>
+
+ <br>
+ <%= f.input :pickuplocation, label: "選擇《Chef29 取貨點》", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "如：a poet，請查看取貨點清單。"} %>
+
+<%= f.input :pickupdates, label: "輸入取貨日期與時間", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "如5/27 星期三 下午7點"} %>
+
+
+ <hr>
 
  <%= f.input :reciever, label: "發票", as: :text, input_html: { :class => "span4", rows: "1", :placeholder => "要/不用 - 若不用，發票也將捐出去"} %>
 
@@ -525,8 +593,6 @@
  <%= link_to "《看現在已經串聯多少人》", 'http://www.chef29.com/pins/420-starbucks-paying-it-forward' %>
   
   </center>
-
-
 
   </div>
 

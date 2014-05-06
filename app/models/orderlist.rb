@@ -1,10 +1,9 @@
 class Orderlist < ActiveRecord::Base
-  attr_accessible :week, :month, :description, :dish1, :gift, :re, :ship, :discount, :paylater, :detail, :reciever, :account, :wireamount, :dish2, :dish3, :dish4, :dish5, :dish6, :dishsum, :time, :phone, :address
+  attr_accessible :pickupdates, :pickuplocation, :week, :month, :description, :dish1, :gift, :re, :ship, :discount, :paylater, :detail, :reciever, :account, :wireamount, :dish2, :dish3, :dish4, :dish5, :dish6, :dishsum, :time, :phone, :address
  
 
   belongs_to :user
-  
-  validates :time, presence: true
+
   validates :dish1, presence: true
   validates :dish2, presence: true
   validates :dish3, presence: true  

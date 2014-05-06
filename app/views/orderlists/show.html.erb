@@ -80,19 +80,33 @@
             <% end %>
 
             <hr>
+              <center><font color="#5CA5FF" size ="4" face = "Baskerville Old Face">宅配送貨</font></center>
              
-               <p>收餐人聯絡電話：
-              <%= @orderlist.phone %>
+            <p>收餐人聯絡電話：
+            <%= @orderlist.phone %>
             </p>
             
             <p>新指定送餐地址：
               <%= @orderlist.address %>
             </p>
-            
 
             <p>送餐時間：
               <%= @orderlist.time %>
             </p>
+
+
+            <hr>
+            <center><font color="#5CA5FF" size ="4" face = "Baskerville Old Face">Chef29 取貨點取貨</font></center>
+
+            <p>Chef29 取貨點：
+            <%= @orderlist.pickuplocation %>
+            </p>
+
+            <p>收餐人聯絡電話：
+            <%= @orderlist.pickupdates %>
+            </p>
+
+
             <hr>
             <center><font color="#5CA5FF" size ="4" face = "Baskerville Old Face">餐點</font></center>
 
