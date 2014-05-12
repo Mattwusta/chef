@@ -61,6 +61,9 @@ Dine::Application.routes.draw do
   match 'alert' => 'alert#new', :as => 'alert',  :via => :get
   match 'alert'  => 'alert#create', :as => 'alert', :via => :post
 
+  match 'wineordercontact' => 'wineordercontact#new', :as => 'wineordercontact', :via => :get
+  match 'wineordercontact' => 'wineordercontact#create', :as => 'wineordercontact', :via => :post
+
   as :user do
   match '/user/confirmation' => 'confirmations#update', :via => :put, :as => :update_user_confirmation
   end

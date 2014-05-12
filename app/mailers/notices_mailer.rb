@@ -1,6 +1,6 @@
 class NoticesMailer < ActionMailer::Base
    default :from => "noreply@chef29.com"
-  default :to => "matthew.wu328@gmail.com"
+  default :to => "chef29manage@gmail.com"
 
   def new_buy(buy)
     @buy = buy

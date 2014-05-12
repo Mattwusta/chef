@@ -1,0 +1,173 @@
+
+
+<br><br>
+<center>
+    <font color="gray" size ="6" face = "Baskerville Old Face">請填入以下表格以完成預訂酒類！</font>
+  </center>
+  <br><br><br><br>
+
+<div class=" hero-unit">
+
+<b><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">《預訂酒類，取貨點付款》</font><b>
+<br>
+<font color="gray" size ="3" >
+<br>
+因網路上不能販賣酒類商品，所以 Chef29 只提供線上預訂酒類商品服務，  
+<br>
+然後在 Chef29 取貨點取貨，確認身份年紀並完成付款的服務。
+<br>
+</font>
+
+
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#responsive">酒類預訂細節與限制</button>
+
+<div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">運費解說</h4>
+  </div>
+
+  <div class="modal-body">
+    
+    <img src="https://farm6.staticflickr.com/5056/14055316892_eb970f03df_o.png" width="1400" height="1102" alt="delivery1">
+      
+      <img src="https://farm6.staticflickr.com/5572/14035380566_2e67d3e30b_o.png" width="1400" height="1102" alt="delivery1">
+        
+
+        <img src="https://farm6.staticflickr.com/5296/14058518985_ea6ea4d9cd_o.png" width="1400" height="1102" alt="delivery1">  
+
+        <img src="https://farm3.staticflickr.com/2928/14058967924_f367775517_o.png" width="1400" height="1102" alt="delivery1">  
+
+
+
+  </div>
+</div>
+
+
+
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#responsive">運費解說</button>
+
+<div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">運費解說</h4>
+  </div>
+
+  <div class="modal-body">
+    
+    <img src="https://farm6.staticflickr.com/5056/14055316892_eb970f03df_o.png" width="1400" height="1102" alt="delivery1">
+      
+      <img src="https://farm6.staticflickr.com/5572/14035380566_2e67d3e30b_o.png" width="1400" height="1102" alt="delivery1">
+        
+
+        <img src="https://farm6.staticflickr.com/5296/14058518985_ea6ea4d9cd_o.png" width="1400" height="1102" alt="delivery1">  
+
+        <img src="https://farm3.staticflickr.com/2928/14058967924_f367775517_o.png" width="1400" height="1102" alt="delivery1">  
+
+
+
+  </div>
+</div>
+
+
+<br><br>
+
+<%= form_for @wineorder, :url => wineordercontact_path do |form| %>
+  <fieldset class="fields">
+    
+    <div class="field">
+      <%= form.label :預訂大名 %>
+      <%= form.text_field :name, :placeholder => "預訂大名: 林XX" %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :聯絡EMAIL %>
+      <%= form.text_field :email, :placeholder => "chef29@gmail.com" %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :聯絡電話 %>
+      <%= form.text_field :phone, :placeholder => "0917-634－129" %>
+    </div>
+    
+
+    <div class="field">
+      <%= form.label :酒編號與名字 %>
+      <%= form.text_field :wineid, :placeholder => "apoetw1：法國Chardonnay" %>
+    </div>
+
+        <div class="field">
+      <%= form.label :預訂數量 %>
+      <%= form.text_field :qty, :placeholder => "3瓶" %>
+    </div>
+  
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#pickuplocation">取貨點說明</button>
+
+
+<div id="pickuplocation" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">取貨點說明</h4>
+  </div>
+
+  <div class="modal-body">
+   <center>
+
+        <img src="https://farm3.staticflickr.com/2918/14116204491_3a54ce24db_b.jpg" width="1400" height="1102" alt="delivery1">  
+
+        <img src="https://farm3.staticflickr.com/2938/13932877408_c29d74a89a_o.png" width="500" height="1102" alt="delivery1">  
+
+<hr>
+
+        <img src="https://farm8.staticflickr.com/7372/13932845489_ddf6b8ccb6_o.png" width="500" height="1102" alt="delivery1"> 
+
+        <img src="https://farm6.staticflickr.com/5315/14106062803_297e4e57f4_o.jpg" width="500" height="1102" alt="delivery1">  
+
+        <img src="https://farm8.staticflickr.com/7039/14116446992_90a5802bb3_o.png" width="400" height="1102" alt="delivery1">  
+
+<hr>
+
+        <img src="https://farm6.staticflickr.com/5480/13932554930_31090f6ae1_o.jpg" width="1400" height="1102" alt="delivery1">  
+
+
+</center>
+  </div>
+</div>
+<br>
+  <br>
+
+    <div class="field">
+      <%= form.label :Chef29取貨點取貨與付款  %>
+      <%= form.text_field :pickuplocation, :placeholder => "a poet" %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :取貨日期與時間 %>
+      <%= form.text_field :pickupdate, :placeholder => "5/5 下午4點" %>
+    </div>
+
+     <div class="field">
+      <%= form.label :特別需求 %>
+      <%= form.text_field :special %>
+    </div>
+  
+  </fieldset>
+  
+<br><br>
+
+  <fieldset class="actions">
+    <%= form.submit "完成預訂酒類商品" %>
+  </fieldset>
+<% end %>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44036574-1', 'chef29.com');
+  ga('send', 'pageview');
+
+</script>
