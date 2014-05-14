@@ -2,24 +2,24 @@
 
 <br><br>
 <center>
-    <font color="gray" size ="6" face = "Baskerville Old Face">請填入以下表格以完成預訂酒類！</font>
+    <font color="gray" size ="6" face = "Baskerville Old Face">請填入以下表格以完成酒類預訂！</font>
   </center>
   <br><br><br><br>
 
 <div class=" hero-unit">
 
-<b><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">《預訂酒類，取貨點付款》</font><b>
+<b><font color="#5CA5FF" size ="5" face = "Baskerville Old Face">《酒類預訂，Chef29取貨付款取貨》</font><b>
 <br>
 <font color="gray" size ="3" >
 <br>
-因網路上不能販賣酒類商品，所以 Chef29 只提供線上預訂酒類商品服務，  
+因網路上不能販賣酒類商品，所以 Chef29 只提供線上酒類商品預訂服務，  
 <br>
-然後在 Chef29 取貨點取貨，確認身份年紀並完成付款的服務。
+然後在 《Chef29 取貨點》取貨，確認身份並完成付款的服務。
 <br>
 </font>
 
 
-<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#responsive">酒類預訂細節與限制</button>
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#responsive">酒類預訂說明與限制</button>
 
 <div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
   <div class="modal-header">
@@ -38,14 +38,12 @@
 
         <img src="https://farm3.staticflickr.com/2928/14058967924_f367775517_o.png" width="1400" height="1102" alt="delivery1">  
 
-
-
   </div>
 </div>
 
 
 
-<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#responsive">運費解說</button>
+<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#responsive">酒類預訂教學</button>
 
 <div id="responsive" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
   <div class="modal-header">
@@ -57,18 +55,19 @@
     
     <img src="https://farm6.staticflickr.com/5056/14055316892_eb970f03df_o.png" width="1400" height="1102" alt="delivery1">
       
-      <img src="https://farm6.staticflickr.com/5572/14035380566_2e67d3e30b_o.png" width="1400" height="1102" alt="delivery1">
+    <img src="https://farm6.staticflickr.com/5572/14035380566_2e67d3e30b_o.png" width="1400" height="1102" alt="delivery1">
         
+    <img src="https://farm6.staticflickr.com/5296/14058518985_ea6ea4d9cd_o.png" width="1400" height="1102" alt="delivery1">  
 
-        <img src="https://farm6.staticflickr.com/5296/14058518985_ea6ea4d9cd_o.png" width="1400" height="1102" alt="delivery1">  
-
-        <img src="https://farm3.staticflickr.com/2928/14058967924_f367775517_o.png" width="1400" height="1102" alt="delivery1">  
-
-
+    <img src="https://farm3.staticflickr.com/2928/14058967924_f367775517_o.png" width="1400" height="1102" alt="delivery1">  
 
   </div>
 </div>
 
+
+<div class="row-fluid">
+  
+  <div class="span3"  >
 
 <br><br>
 
@@ -146,11 +145,17 @@
       <%= form.text_field :pickupdate, :placeholder => "5/5 下午4點" %>
     </div>
 
+       <div class="field">
+      <%= form.label :與其他訂單如水果箱一起取貨 %>
+      <%= form.text_field :otherorder, :placeholder => "與一週水果箱，訂單188一起取貨" %>
+    </div>
+
      <div class="field">
       <%= form.label :特別需求 %>
       <%= form.text_field :special %>
     </div>
   
+
   </fieldset>
   
 <br><br>
@@ -159,6 +164,22 @@
     <%= form.submit "完成預訂酒類商品" %>
   </fieldset>
 <% end %>
+
+</div> 
+
+  <div class="span9">
+    <center>
+ 
+</center>
+  </div> 
+
+
+</div>
+
+
+
+
+<b><font color="red" size ="4" face = "Baskerville Old Face">總金額 ＝酒類商品金額＋Chef29 取貨點費用($100基本服務費＋延遲取貨費用）</font><b>
 
 
 <script>

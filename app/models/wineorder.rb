@@ -4,9 +4,9 @@ class Wineorder
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :name, :email, :phone, :wineid, :qty, :pickuplocation, :special, :pickupdate
+  attr_accessor :name, :email, :phone, :wineid, :qty, :pickuplocation, :otherorder, :special, :pickupdate
 
-  validates :name, :email, :phone, :wineid, :qty, :pickuplocation, :special, :pickupdate, :presence => true
+  validates :name, :email, :phone, :wineid, :qty, :pickuplocation, :otherorder, :special, :pickupdate, :presence => true
   validates :email, :format => { :with => %r{.+@.+\..+} }, :allow_blank => true
   
   def initialize(attributes = {})
