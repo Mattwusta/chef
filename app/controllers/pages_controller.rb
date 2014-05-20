@@ -51,6 +51,10 @@ end
 def faq
 end
 
+def onmenu
+end
+
+
 def fruit
 end
 

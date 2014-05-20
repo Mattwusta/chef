@@ -54,6 +54,9 @@ Dine::Application.routes.draw do
   get 'orderpage' => 'pages#orderpage'
   get 'pickup' => 'pages#pickup'
   get 'dogooder' => 'pages#dogooder'
+  get 'onmenu' => 'pages#onmenu'
+
+  
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
