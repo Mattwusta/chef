@@ -14,6 +14,9 @@ end
 def why
 end
 
+def show
+end
+
 
 def dogooder
 end
