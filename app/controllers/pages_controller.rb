@@ -76,23 +76,6 @@ end
 def menu
 end
 
-def dish1
-end
-
-def dish2
-end
-
-def dish3
-end
-
-def dish4
-end
-
-def dish5
-end
-
-def dish6
-end
 
 def side
 end
