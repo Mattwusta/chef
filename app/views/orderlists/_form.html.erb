@@ -351,38 +351,6 @@
 </div>
 
 
-<button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#pf">想參加愛心串聯？</button>
-
-<div id="pf" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
-
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 class="pf-title">愛心串聯活動解說</h4>
-  </div>
-
-  <div class="modal-body">
-<center>
-<iframe width="560" height="315" src="//www.youtube.com/embed/W27JLC1Yg2Q" frameborder="0" allowfullscreen></iframe>
-
-<hr>
-
-
- <img src="https://farm8.staticflickr.com/7148/13844724645_cf5aaa682d_o.png" width="1400" height="1102" alt="1">
-
-
-
- <img src=" https://farm8.staticflickr.com/7163/13845091534_52546697d3_o.png" width="1400" height="1102" alt="1">
-
- <br><br><br>
-
- <%= link_to "《看現在已經串聯多少人》", 'http://www.chef29.com/pins/420-starbucks-paying-it-forward' %>
-  
-  </center>
-  </div>
-
-</div>
-
-
 <br>
 <br>
 
@@ -564,38 +532,9 @@
  <hr>
 
 
- <%= f.input :detail, label: "備註 （您願意參加愛心鏈幫下位客人一份餐 ＄299 買單嗎？）", as: :text, input_html: { :class => "span5", rows: "3", :placeholder => "(我要參加 2014 愛心鏈） 若您有特別需求，如不吃什麼，團體訂購包裝需求(省運費），請在此填入。"} %>
+ <%= f.input :detail, label: "備註 ", as: :text, input_html: { :class => "span5", rows: "3", :placeholder => " 若您有特別需求，如不吃什麼，團體訂購包裝需求(省運費），請在此填入。"} %>
 
- <button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#pf">想參加愛心串聯？</button>
-
-<div id="pf" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
-
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 class="pf-title">愛心串聯活動解說</h4>
-  </div>
-
-  <div class="modal-body">
-<center>
-<iframe width="560" height="315" src="//www.youtube.com/embed/W27JLC1Yg2Q" frameborder="0" allowfullscreen></iframe>
-
-<hr>
-
- <img src="https://farm8.staticflickr.com/7148/13844724645_cf5aaa682d_o.png" width="1400" height="1102" alt="1">
-
-
-
- <img src=" https://farm8.staticflickr.com/7163/13845091534_52546697d3_o.png" width="1400" height="1102" alt="1">
-
- <br><br><br>
-
- <%= link_to "《看現在已經串聯多少人》", 'http://www.chef29.com/pins/420-starbucks-paying-it-forward' %>
-  
-  </center>
-
-  </div>
-
-</div>
+ 
 
  <hr>
   <%= f.input :discount, label: "免費餐點禮卷密碼", as: :text, input_html: { :class => "span5", rows: "2", :placeholder => "若有免費餐點密碼請在此輸入，付款時請扣除＄299. 與會員第一份餐點免費需要分開用，輸入錯誤密碼不出貨。"} %>
