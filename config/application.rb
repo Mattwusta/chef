@@ -64,15 +64,15 @@ config.assets.initialize_on_precompile = false
 config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :domain               => "chef29.com",
-  :user_name            => "chef29@chef29.com",
-  :password             => "mattenzo",
+  :domain               => "gmail.com",
+  :user_name            => "matthew.wu328@gmail.com",
+  :password             => "voyage129",
   :authentication       => :plain,
   :enable_starttls_auto => true
 }
 
 config.action_mailer.default_url_options = {
-  :host => "chef29.com"
+  :host => "gmail.com"
 }
 
   end

@@ -2548,3 +2548,293 @@
 [06/23/14 13:25:56 +0800 mattbooktekimbp.home (5239)] INFO : Installing Rails3 Error instrumentation
 [06/23/14 13:25:56 +0800 mattbooktekimbp.home (5239)] INFO : Finished instrumentation
 [06/23/14 13:25:58 +0800 mattbooktekimbp.home (5239)] INFO : Doing deferred dependency-detection before Rack startup
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Starting the New Relic agent in "development" environment.
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Reading configuration from config/newrelic.yml
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Enabling the Request Sampler.
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Enabling the Request Sampler.
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Environment: development
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Dispatcher: webrick
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Application: development
+[07/15/14 15:55:04 +0800 Mattbookteki-MacBook-Pro.local (45409)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[07/15/14 15:55:05 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Installing ActiveRecord instrumentation
+[07/15/14 15:55:05 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Installing Net instrumentation
+[07/15/14 15:55:05 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Installing deferred Rack instrumentation
+[07/15/14 15:55:05 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Installing Rails 3 Controller instrumentation
+[07/15/14 15:55:05 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[07/15/14 15:55:05 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Installing Rails3 Error instrumentation
+[07/15/14 15:55:05 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Finished instrumentation
+[07/15/14 15:55:07 +0800 Mattbookteki-MacBook-Pro.local (45409)] INFO : Doing deferred dependency-detection before Rack startup
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Starting the New Relic agent in "development" environment.
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Reading configuration from config/newrelic.yml
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Enabling the Request Sampler.
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Enabling the Request Sampler.
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Environment: development
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Dispatcher: webrick
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Application: development
+[09/05/14 16:22:28 +0800 Mattbookteki-MacBook-Pro.local (3229)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/05/14 16:22:29 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Installing ActiveRecord instrumentation
+[09/05/14 16:22:29 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Installing Net instrumentation
+[09/05/14 16:22:29 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Installing deferred Rack instrumentation
+[09/05/14 16:22:29 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Installing Rails 3 Controller instrumentation
+[09/05/14 16:22:29 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[09/05/14 16:22:29 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Installing Rails3 Error instrumentation
+[09/05/14 16:22:29 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Finished instrumentation
+[09/05/14 16:22:29 +0800 Mattbookteki-MacBook-Pro.local (3229)] INFO : Doing deferred dependency-detection before Rack startup
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Starting the New Relic agent in "development" environment.
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Reading configuration from config/newrelic.yml
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Enabling the Request Sampler.
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Enabling the Request Sampler.
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Environment: development
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Dispatcher: webrick
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Application: development
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Installing ActiveRecord instrumentation
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Installing Net instrumentation
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Installing deferred Rack instrumentation
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Installing Rails 3 Controller instrumentation
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Installing Rails3 Error instrumentation
+[09/12/14 10:47:49 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Finished instrumentation
+[09/12/14 10:47:51 +0800 Mattbookteki-MacBook-Pro.local (29775)] INFO : Doing deferred dependency-detection before Rack startup
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Starting the New Relic agent in "development" environment.
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Reading configuration from config/newrelic.yml
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Enabling the Request Sampler.
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Enabling the Request Sampler.
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Environment: development
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Dispatcher: webrick
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Application: development
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Installing ActiveRecord instrumentation
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Installing Net instrumentation
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Installing deferred Rack instrumentation
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Installing Rails 3 Controller instrumentation
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Installing Rails3 Error instrumentation
+[09/12/14 19:38:27 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Finished instrumentation
+[09/12/14 19:38:29 +0800 Mattbookteki-MacBook-Pro.local (31962)] INFO : Doing deferred dependency-detection before Rack startup
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Starting the New Relic agent in "development" environment.
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Reading configuration from config/newrelic.yml
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Enabling the Request Sampler.
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Enabling the Request Sampler.
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Environment: development
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Dispatcher: webrick
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Application: development
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Installing ActiveRecord instrumentation
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Installing Net instrumentation
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Installing deferred Rack instrumentation
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Installing Rails 3 Controller instrumentation
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Installing Rails3 Error instrumentation
+[09/13/14 19:45:45 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Finished instrumentation
+[09/13/14 19:45:47 +0800 Mattbookteki-MacBook-Pro.local (37627)] INFO : Doing deferred dependency-detection before Rack startup
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Starting the New Relic agent in "development" environment.
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Reading configuration from config/newrelic.yml
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Enabling the Request Sampler.
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Enabling the Request Sampler.
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Environment: development
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Dispatcher: webrick
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Application: development
+[10/15/14 18:15:14 +0800 Mattbookteki-MacBook-Pro.local (25266)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[10/15/14 18:15:15 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Installing ActiveRecord instrumentation
+[10/15/14 18:15:15 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Installing Net instrumentation
+[10/15/14 18:15:15 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Installing deferred Rack instrumentation
+[10/15/14 18:15:15 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Installing Rails 3 Controller instrumentation
+[10/15/14 18:15:15 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/15/14 18:15:15 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Installing Rails3 Error instrumentation
+[10/15/14 18:15:15 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Finished instrumentation
+[10/15/14 18:15:16 +0800 Mattbookteki-MacBook-Pro.local (25266)] INFO : Doing deferred dependency-detection before Rack startup
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Starting the New Relic agent in "development" environment.
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Reading configuration from config/newrelic.yml
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Enabling the Request Sampler.
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Enabling the Request Sampler.
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Environment: development
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Dispatcher: webrick
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Application: development
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Installing ActiveRecord instrumentation
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Installing Net instrumentation
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Installing deferred Rack instrumentation
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Installing Rails 3 Controller instrumentation
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Installing Rails3 Error instrumentation
+[10/17/14 16:28:58 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Finished instrumentation
+[10/17/14 16:29:00 +0800 Mattbookteki-MacBook-Pro.local (3626)] INFO : Doing deferred dependency-detection before Rack startup
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Starting the New Relic agent in "development" environment.
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Reading configuration from config/newrelic.yml
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Enabling the Request Sampler.
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Enabling the Request Sampler.
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Environment: development
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Dispatcher: webrick
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Application: development
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Installing ActiveRecord instrumentation
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Installing Net instrumentation
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Installing deferred Rack instrumentation
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Installing Rails 3 Controller instrumentation
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Installing Rails3 Error instrumentation
+[10/21/14 22:34:41 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Finished instrumentation
+[10/21/14 22:34:44 +0800 Mattbookteki-MacBook-Pro.local (25715)] INFO : Doing deferred dependency-detection before Rack startup
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Starting the New Relic agent in "development" environment.
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Reading configuration from config/newrelic.yml
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Enabling the Request Sampler.
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Enabling the Request Sampler.
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Environment: development
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Dispatcher: webrick
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Application: development
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Installing ActiveRecord instrumentation
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Installing Net instrumentation
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Installing deferred Rack instrumentation
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Installing Rails 3 Controller instrumentation
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Installing Rails3 Error instrumentation
+[10/22/14 14:39:57 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Finished instrumentation
+[10/22/14 14:39:59 +0800 Mattbookteki-MacBook-Pro.local (28943)] INFO : Doing deferred dependency-detection before Rack startup
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Starting the New Relic agent in "development" environment.
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Reading configuration from config/newrelic.yml
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Enabling the Request Sampler.
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Enabling the Request Sampler.
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Environment: development
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Dispatcher: webrick
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Application: development
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Installing ActiveRecord instrumentation
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Installing Net instrumentation
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Installing deferred Rack instrumentation
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Installing Rails 3 Controller instrumentation
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Installing Rails3 Error instrumentation
+[10/30/14 13:56:29 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Finished instrumentation
+[10/30/14 13:56:30 +0800 Mattbookteki-MacBook-Pro.local (27804)] INFO : Doing deferred dependency-detection before Rack startup
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Starting the New Relic agent in "development" environment.
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Reading configuration from config/newrelic.yml
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Enabling the Request Sampler.
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Enabling the Request Sampler.
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Environment: development
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Dispatcher: webrick
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Application: development
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Installing ActiveRecord instrumentation
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Installing Net instrumentation
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Installing deferred Rack instrumentation
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Installing Rails 3 Controller instrumentation
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Installing Rails3 Error instrumentation
+[11/05/14 20:11:36 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Finished instrumentation
+[11/05/14 20:11:37 +0800 Mattbookteki-MacBook-Pro.local (57558)] INFO : Doing deferred dependency-detection before Rack startup
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Starting the New Relic agent in "development" environment.
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Reading configuration from config/newrelic.yml
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Enabling the Request Sampler.
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Enabling the Request Sampler.
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Environment: development
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Dispatcher: webrick
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Application: development
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Installing ActiveRecord instrumentation
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Installing Net instrumentation
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Installing deferred Rack instrumentation
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Installing Rails 3 Controller instrumentation
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Installing Rails3 Error instrumentation
+[11/07/14 23:46:43 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Finished instrumentation
+[11/07/14 23:46:45 +0800 Mattbookteki-MacBook-Pro.local (9880)] INFO : Doing deferred dependency-detection before Rack startup
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Starting the New Relic agent in "development" environment.
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Reading configuration from config/newrelic.yml
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Enabling the Request Sampler.
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Enabling the Request Sampler.
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Environment: development
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Dispatcher: webrick
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Application: development
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Installing ActiveRecord instrumentation
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Installing Net instrumentation
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Installing deferred Rack instrumentation
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Installing Rails 3 Controller instrumentation
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Installing Rails3 Error instrumentation
+[11/11/14 15:03:44 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Finished instrumentation
+[11/11/14 15:03:45 +0800 Mattbookteki-MacBook-Pro.local (36746)] INFO : Doing deferred dependency-detection before Rack startup
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Starting the New Relic agent in "development" environment.
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Reading configuration from config/newrelic.yml
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Enabling the Request Sampler.
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Enabling the Request Sampler.
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Environment: development
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Dispatcher: webrick
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Application: development
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Installing ActiveRecord instrumentation
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Installing Net instrumentation
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Installing deferred Rack instrumentation
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Installing Rails 3 Controller instrumentation
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Installing Rails3 Error instrumentation
+[11/12/14 17:49:20 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Finished instrumentation
+[11/12/14 17:49:21 +0800 Mattbookteki-MacBook-Pro.local (44488)] INFO : Doing deferred dependency-detection before Rack startup
+[11/12/14 20:03:04 +0800 Mattbookteki-MacBook-Pro.local (44488)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: 534-5.7.9 Please log in with your web browser and then try again. Learn more at
+
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Starting the New Relic agent in "development" environment.
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Reading configuration from config/newrelic.yml
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Enabling the Request Sampler.
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Enabling the Request Sampler.
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Environment: development
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Dispatcher: webrick
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Application: development
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Installing ActiveRecord instrumentation
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Installing Net instrumentation
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Installing deferred Rack instrumentation
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Installing Rails 3 Controller instrumentation
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Installing Rails3 Error instrumentation
+[11/12/14 20:04:16 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Finished instrumentation
+[11/12/14 20:04:17 +0800 Mattbookteki-MacBook-Pro.local (45637)] INFO : Doing deferred dependency-detection before Rack startup
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Starting the New Relic agent in "development" environment.
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Reading configuration from config/newrelic.yml
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] ERROR : Unable to read configuration file config/newrelic.yml: (<unknown>): could not find expected ':' while scanning a simple key at line 46 column 3
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Enabling the Request Sampler.
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Enabling the Request Sampler.
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Environment: development
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Dispatcher: webrick
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Application: development
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Installing ActiveRecord instrumentation
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Installing Net instrumentation
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Installing deferred Rack instrumentation
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Installing Rails 3 Controller instrumentation
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Installing Rails3 Error instrumentation
+[11/12/14 20:07:01 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Finished instrumentation
+[11/12/14 20:07:02 +0800 Mattbookteki-MacBook-Pro.local (45803)] INFO : Doing deferred dependency-detection before Rack startup
