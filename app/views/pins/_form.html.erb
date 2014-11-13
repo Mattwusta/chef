@@ -9,15 +9,6 @@
       <br>
 
 
-
-     <font size = "5"><center><b><a href="" title="Flickr 上 mattwusta 的 instagram"><img src="http://farm8.staticflickr.com/7417/9909669085_8a4db88711_o.png" width="120" height="120" alt="instagram"></a></center></font>
-     <br>
-
-     <font size = "5"><center><b><a href="" title="Flickr 上 mattwusta 的 Instagramvid"><img src="http://farm8.staticflickr.com/7416/9909716016_786327a506_q.jpg" width="40" height="90" alt="Instagramvid"></a></font>
-     <br><br>
-
-     <font size = "5"><center><b><a href="" title="Flickr 上 mattwusta 的 vine"><img src="http://farm8.staticflickr.com/7329/9909745744_19dee959dd_q.jpg" width="45" height="150" alt="vine"></a></font>
-    
     </div>
 
     <div class="span10">
@@ -26,20 +17,125 @@
   <%= f.error_notification %>
   <%= f.full_error :image_file_size, class: "alert alert-error" %>
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
+
+  <%= f.input :name, label: "商品服務", as: :text, input_html: { :class => "span10", rows: "1" }%>
   <%= f.input :image, label: "上傳圖片" %>
   <%= f.input :image_remote_url, label: "或輸入URL連結", as: :text, input_html: { :class => "span6", rows: "1" } %>
 
-  <%= f.input :yt_video_id, label: "輸入Youtube ID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "youtu.be/Iz_kTGXd90w=>(Iz_kTGXd90w)就是Youtube ID"} %>
+  <%= f.input :yt_video_id, label: "輸入Youtube ID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "將 Youtube ID 填入此處"} %>
 
-<%= f.input :instapid, label: "輸入Instagram PID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "//instagram.com/p/eMSpPKP9cF/embed/=>(eMSpPKP9cF/embed/) － 就是相片PID"} %>
-  <%= f.input :instaid, label: "輸入Instagram影片ID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "//instagram.com/p/b-oOubP9cZ/embed/=>(b-oOubP9cZ/embed/)－ 就是Instagram影片ID"} %>
+  <button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#utube">Youtube ID 拷貝教學</button>
+
+<div id="utube" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">Youtube ID 拷貝教學</h4>
+  </div>
+
+  <div class="modal-body">
+   
+<br>
+   <center>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">1. 請到您的 Youtube 影片頁面</font>
+<br><br>
+
+<img src="https://farm8.staticflickr.com/7571/15593316057_90a9ea5cac_z.jpg" width="640" height="310" alt="螢幕快照 2014-11-13 下午3.35.49"></a>
+
+<br><br><br><br>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">2. 點選播放器下方 《分享》，再點選《嵌入》。</font>
+<br><br>
+
+<img src="https://farm6.staticflickr.com/5615/15754854486_72c19d08ce_z.jpg" width="640" height="300" alt="螢幕快照 2014-11-13 下午3.55.17"></a>
+
+<br><br><br><br>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">3. 嵌入碼藍色部份就是 Youtube ID</font>
+<br><br>
+
+<img src="https://farm8.staticflickr.com/7473/15593722020_d4e3ccccd5.jpg" width="500" height="109" alt="螢幕快照 2014-11-13 下午3.50.24"></a>
+
+</center>
+  </div>
+</div>
+
+<br><br>
+
+  <%= f.input :instapid, label: "輸入Goole 地圖 ", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "將 Google 地圖 ID 填入此處"} %>
+
+   <button class="demo btn btn-primary btn-lg" data-toggle="modal" href="#gmap">Google 地圖 ID 拷貝教學</button>
+
+<div id="gmap" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">Google 地圖 ID 拷貝教學</h4>
+  </div>
+
+  <div class="modal-body">
+   
+
+   <center>
+<br>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">1. 現在 Google Map 裡輸入您的地址</font>
+<br><br>
+
+<img src="https://farm9.staticflickr.com/8638/15593795790_0cb295b574_z.jpg" width="640" height="283" alt="1"></a>
+
+
+<br><br><br><br>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">2. 在 Google Map 裡右下角點選《齒輪》，再點選《分享和崁入地圖》</font>
+<br><br>
+
+<img src="https://farm6.staticflickr.com/5611/15778597335_1da1ff302e_z.jpg" width="640" height="350" alt="2"></a>
+
+
+<br><br><br><br>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">3. 視窗跳出後點選《崁入地圖》</font>
+<br><br>
+
+<img src="https://farm8.staticflickr.com/7563/15776729271_fb562d50f7_z.jpg" width="640" height="479" alt="3"></a>
+
+
+<br><br><br><br>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">4.複製拷貝《崁入碼》全部 </font>
+<br><br>
+
+<img src="https://farm8.staticflickr.com/7500/15159169903_d3bd6d6f74_z.jpg" width="640" height="419" alt="4"></a>
+
+<br><br><br><br>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">5.將《崁入碼》貼在筆記本上</font>
+<br><br>
+
+<img src="https://farm8.staticflickr.com/7472/15780172402_e612fbcaac_z.jpg" width="640" height="209" alt="5"></a>
+
+<br><br><br><br>
+
+<font color="Blue" size ="4" face = "Baskerville Old Face">6.藍色部份為 Google 地圖 ID</font>
+<br><br>
+
+<img src="https://farm8.staticflickr.com/7476/15593446337_b47213528c_o.png" width="482" height="206" alt="6"></a>
+
+
+
+</center>
+  </div>
+</div>
+
+<br><br>
+
+  <%= f.input :instaid, label: "商品服務價格", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "$200/每日"} %>
   
 
-  <%= f.input :vineid, label: "輸入VINEID", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "vine.co/v/h1HwMFwhWul/embed => (h1HwMFwhWul/embed/simple)就是VINEID"} %>
+  <%= f.input :vineid, label: "聯絡方式", as: :text, input_html: { :class => "span6", rows: "2", :placeholder => "手機/EMAIL"} %>
 
-  <%= f.input :name, label: "主題", as: :text, input_html: { :class => "span10", rows: "1" }%>
   
-  <%= f.input :description, label: "內容", as: :text, input_html: { :class => "span10", rows: "10" } %>
+  <%= f.input :description, label: "備註", as: :text, input_html: { :class => "span10", rows: "10" , :placeholder => "取貨時間，押金說明，損害賠償，超時費用說明，其他..."} %>
 
   <P style = "padding-left:20px;"><%= f.label :category, label: "分類      .    " %> 
     <%= f.collection_select :category_id, Category.all, :id, :name %>  </p>

@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
       </a>
              
-<%= link_to "Chef29 今晚大廚", root_path, class: "brand" %>
+<%= link_to "iRent1我租個", root_path, class: "brand" %>
 
 
 <div class="nav-collapse">
@@ -15,83 +15,35 @@
    <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#" face = "Baskerville Old Face">了解更多</a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" >
-   <li><%= link_to "HOC | 主廚之家", hoc_path %></li>
-   <li><%= link_to "Angels｜天使們", 'http://www.chef29.com/categories/7' %></li>
+   <li><%= link_to "關於我們", about_path %></li>
+   <li><%= link_to "服務說明", how_path %></li>
    <li><%= link_to "News | 新聞", 'http://www.chef29.com/categories/2' %></li>
-   <li><%= link_to "Do Good | 做好事", 'http://www.chef29.com/categories/5' %></li>
-   <li><%= link_to "29SHOW | 今晚廚秀", chef29tv_path %></li>
-   <li><%= link_to "Chef29 @Pintrest ", 'http://www.pinterest.com/chef29com/boards/' %></li>
-   <li><%= link_to "Chef29 @Instagram", 'http://instagram.com/chef29com' %>
-  </li>
+  
    </ul>
    <li>
 
 
-  <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">菜單上</a>
+  <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">台北市</a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="#">餐點與水果箱</a>
-
-
-   <ul class="dropdown-menu">
-   <li><%= link_to "《Menu | 線上餐點》", menu_path %></li>
-   <li><%= link_to "《一週水果箱》", fruit_path %></li>
-   <li><%= link_to "影音餐點教學(需密碼)", hocv_path %></li>
-   <li><%= link_to "過去餐點", 'http://www.chef29.com/categories/1' %></li>
-   <li><%= link_to "餐點教學說明", know_path %></li>
-   <li><%= link_to "餐點教學好處", why_path %></li>
-   
-   <hr>
-
-    <font color="#5CA5FF" size ="3" face = "Baskerville Old Face">《訂購教學》</font>
-       <br><br>
-   <li><%= link_to "影片教學", how_path %></li>
-   <li><%= link_to "運費細節", delivery_path %></li>
-   <li><%= link_to "取消訂單", orderlists_path %></li>
-   <li><%= link_to "退貨政策", return_path %></li>
-   
+   <li><%= link_to "106 台北市",  'http://www.chef29.com/categories/1'%></li>
    </ul>
- <hr>
-  <li><%= link_to "Chef29 取貨點", pickup_path %></li>
-  <li><%= link_to "付款帳號", account_path %></li>
-      </ul>
+   
+   
 
 
-<li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#" face = "Baskerville Old Face">我們故事</a>
 
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" >
-  
-  <li><%= link_to "關於 Chef29", about_path %></li>
-  <li><%= link_to "Chef29 主廚團隊", chefs_path %></li>
-  <li><%= link_to "好公司", goodcompany_path %></li>
-  <li><%= link_to "好人俱樂部", dogooder_path %></li>
-  
-  </ul>
-
-
- <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#"><font color="#5CA5FF" size ="3" >做好事</font></a>
-
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-   <li><%= link_to "Chef29 做的好事", dogood_path %></li>
-   <li><%= link_to "買1餐，給1餐", give_path %></li>
-   <li><%= link_to "愛心餐", lovemeal_path %></li>
-    <li><%= link_to "幫人增加收入", makemoney_path %></li>
-   <li><%= link_to "想幫忙？", help_path %></li>
-      
-   </ul>  
  </ul>
   
   <ul class="nav pull-right">
     <% if user_signed_in? %>
    
-      <li><%= link_to "購買＋", orderpage_path %></li>
+      <li><%= link_to "上架＋", new_pin_path %></li>
       <li><div class="dropdown" style="padding:10px; display: block; "><a class="dropdown-toggle" data-toggle="dropdown" href="#">個人</a>
 
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
    <li><%= link_to "聯絡", contact_path %></li>
-   <li><%= link_to "查看訂單", orderlists_path %></li>
    <li><%= link_to "編輯資料", edit_user_registration_path %></li>
    <li><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
   </ul>

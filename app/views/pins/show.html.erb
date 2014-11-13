@@ -24,6 +24,15 @@
   <div class="span8 offset2">
       <div class="well">
 
+  <p><b><h3><%= @pin.name %></h3></b>  </b></p> 
+  <hr>  
+
+   <p><b><h4><%= @pin.instaid %></h4></b>  </b></p> 
+  <hr>  
+
+  <p><b><h4><%= @pin.vineid %></h4></b>  </b></p> 
+  <hr>  
+
   <center> <%= image_tag @pin.image%> </center>
 
 <% if @pin.yt_video_id.present? %>
@@ -34,24 +43,19 @@
   
 <% if @pin.instapid.present? %>
   <hr>
-   <center><div class="flex-instagram widescreen"><iframe src="//instagram.com/p/<%= @pin.instapid %>" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe></center>
+
+  商品服務地址:
+  <br>  <br>
+   <center><div class="flex-instagram widescreen"><iframe src="https://www.google.com/maps/embed?<%= @pin.instapid %>" width="600" height="450" frameborder="0" style="border:0"></iframe></center>
   <% else %>
 <% end %>
 
-<% if @pin.instaid.present? %>
-  <hr>
-   <center><div class="flex-instagram widescreen"><iframe src="//instagram.com/p/<%= @pin.instaid %>" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe></center>
-  <% else %>
-<% end %>
-
-<% if @pin.vineid.present? %>
-  <hr>
-   <center><div class="flex-vine widescreen"><iframe class="vine-embed" src="https://vine.co/v/<%= @pin.vineid %>" width="600" height="700" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script></center>
-  <% else %>
-<% end %>
-
-<p><b><h3><%= @pin.name %></h3></b>  </b></p> 
   <hr>  
+
+
+商品服務備註：
+<br><br>
+
 <p> <font size="3"><%= simple_format(@pin.description) %></font></p>
   <hr>
 <p><b>Posted By:  </b> <%= @pin.user.name %>

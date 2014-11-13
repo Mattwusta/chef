@@ -8,13 +8,16 @@
     <b><font color="#5CA5FF" size="2"><%= truncate(pin.name, :length => 30) %></h6> </font></b>
 </p>
 
-<p class="內容">
- <font size="2"> <%= truncate(pin.description, :length => 40)  %></font>
+<p class="價格">
+ <font size="1"> <%= truncate(pin.instaid, :length => 40)  %></font>
 </p>
 
 <p>
     <strong>
-        <b>- 看更多-> </b> <%= link_to pin.user.name, pin.user %>
+        <b> 區域-> </b> <%= link_to pin.category.name, pin.category %>
+        <br>
+
+        <b>看更多-> </b> <%= link_to pin.user.name, pin.user %>
     </strong>
 </p>
 
